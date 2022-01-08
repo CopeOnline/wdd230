@@ -14,6 +14,7 @@ header {
     color: white;
     border-radius: 25px;
     padding: 25px;
+    box-shadow: 5px 5px 5px black;
   }
 
   header img {
@@ -23,6 +24,7 @@ header {
 
   h2 {
     border-bottom: 1px solid;
+    text-shadow: 5px 5px 5px grey;
   }
 
   main {
@@ -41,6 +43,7 @@ header {
     color: white;
     border-radius: 25px;
     text-align: center;
+    box-shadow: 5px 5px 5px black;
   }
 
   footer .currentyear {
@@ -52,6 +55,7 @@ header {
     font-style: italic;
     margin-top: -20px;
     padding-bottom: 10px;
+    
   }
 
   hr {
