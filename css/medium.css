@@ -20,6 +20,13 @@
         margin: auto;
         font-family: 'Arimo', sans-serif;
       }
+      body ul li {
+          font-size: 1.125em;
+      }
+
+      h1 {
+          font-size: 2.5em;
+      }
 
       h2 {
           font-size: 1.5em;
