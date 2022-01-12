@@ -1,8 +1,7 @@
 
-body {
-    margin: 0;
-    font-size: 1.5em;
-  }
+body ul li{
+  font-size: .75em;
+}
 
 header {
     display: block;
