@@ -1,0 +1,64 @@
+
+body ul li{
+    font-size: .75em;
+  }
+  
+  header {
+      display: block;
+      background-color: #097eac;
+      color: white;
+      text-align: center;
+    }
+  
+    h1 {
+      font-size: 1.35em;
+      padding-bottom: 10px;
+    }
+  
+    h2 {
+      border-bottom: 1px solid;
+      text-shadow: 5px 5px 5px grey;
+      font-size: 1em;
+      text-align: center;
+    }
+  
+    main {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      font-size: 25px;
+    }  
+  
+    header img {
+      box-shadow: 5px 5px 5px black;
+      margin-top: 10px;
+    }
+  
+    main ul li {
+        padding: 5px;
+    }
+  
+    footer {
+      background-color: #097eac;
+      color: white;
+      text-align: center;
+      font-size: 15px;
+    }
+  
+    footer .currentyear {
+        font-size: 15px;
+        padding-top: 10px;
+    }
+    
+    footer .lastupdated {
+      font-style: italic;
+      margin-top: -10px;
+      padding-bottom: 10px;
+    }
+  
+    hr {
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+  
+  
