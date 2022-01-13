@@ -19,7 +19,7 @@ h2 {
 main {
     display: grid;
     grid-template-columns: 1fr;
-    font-size: 16px;
+    font-size: 12px;
     }  
   
 footer {
