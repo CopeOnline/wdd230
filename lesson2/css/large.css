@@ -5,6 +5,7 @@
         max-width: 960px;
         grid-template-columns: 1fr 1fr 1fr;
         font-size: 16px;
+        align-items: center;
         }  
     
         
