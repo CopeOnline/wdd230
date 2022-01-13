@@ -1,12 +1,24 @@
 @media only screen and (min-width: 60em){
 
+    body{
+        max-width: 960px;
+    }
     main {
         display: grid;
-        max-width: 960px;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 320px 320px 320px;
         font-size: 16px;
         align-items: center;
         }  
-    
+
+
+
+    section:nth-child(3) {
+        margin-left: 1em;
+        grid-column: span 1;
+        width: auto;
+        }
+    .rmhimg, .edximg, .zlwimg {
+        width: 250px;
+        }
         
     }

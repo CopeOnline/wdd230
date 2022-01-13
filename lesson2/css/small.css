@@ -1,8 +1,10 @@
+
 header {
     display: block;
     background-color: #097eac;
     color: white;
     text-align: center;
+    margin-top: -15px;
     }
     
 h1 {
@@ -15,10 +17,13 @@ h2 {
     font-size: 1em;
     padding-bottom: 1em;
     }
+h3 {
+    font-size: 16px;
+}
 
 main {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: block;
+    grid-template-columns: 350px;
     font-size: 12px;
     }  
   
@@ -27,6 +32,8 @@ footer {
     color: white;
     text-align: center;
     font-size: 15px;
+    align-items: center;
+    margin-bottom: -12px;
     }
   
 footer .currentyear {
@@ -40,7 +47,7 @@ footer .lastupdated {
     padding-bottom: 10px;
     }
 
-.rmhimg {
+.rmhimg, .edximg, .zlwimg {
     width: 300px;
     height: auto;
     padding-top: 1em;
@@ -48,7 +55,7 @@ footer .lastupdated {
 
 section {
     border: solid 2px black;
-    padding: 0 3rem;
+    padding: 0 2rem;
     border-radius: 20px 20px 0 0 ;
     background-color: rgb(243, 240, 235);
     margin-bottom: 1em;
