@@ -1,53 +1,53 @@
 @media only screen and (min-width: 32.5em){
     
     header {
-        margin-top: 20px;
-        display: grid;
-        grid-template-columns: 300px 1fr;
-        align-items: center;
-        border-radius: 25px;
-        padding: 25px;
-        box-shadow: 5px 5px 5px black;
-      }
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      align-items: center;
+      border-radius: 25px;
+      padding: 25px;
+      box-shadow: 5px 5px 5px black;
+    }
 
-      header img {
-        box-shadow: 5px 5px 5px black;
-        border-radius: 25px;
-      }
+    header img {
+      box-shadow: 5px 5px 5px black;
+      border-radius: 25px;
+    }
 
-      body {
-        max-width: 960px;
-        margin: auto;
-        font-family: 'Arimo', sans-serif;
-      }
-      body ul li {
-          font-size: 1.125em;
-      }
+    body {
+      max-width: 960px;
+      margin: auto;
+      font-family: 'Arimo', sans-serif;
+    }
+    body ul li {
+      font-size: 1.125em;
+    }
 
-      h1 {
-          font-size: 2.5em;
-      }
+    h1 {
+      font-size: 2.5em;
+    }
 
-      h2 {
-          font-size: 1.5em;
-          text-align: left;
-      }
+    h2 {
+      font-size: 1.5em;
+      text-align: left;
+    }
 
-      footer .lastupdated {
-        font-size: 18px;
-        margin-top: -20px;
-      }
+    footer .lastupdated {
+      font-size: 18px;
+      margin-top: -20px;
+    }
 
-      footer .currentyear {
-          font-size: 25px;
-      }
+    footer .currentyear {
+      font-size: 25px;
+    }
 
-      footer {
-        background-color: #097eac;
-        color: white;
-        border-radius: 25px;
-        text-align: center;
-        box-shadow: 5px 5px 5px black;
-        font-size: 15px;
-      }
+    footer {
+      background-color: #097eac;
+      color: white;
+      border-radius: 25px;
+      text-align: center;
+      box-shadow: 5px 5px 5px black;
+      font-size: 15px;
+    }
 }
