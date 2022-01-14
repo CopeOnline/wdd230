@@ -15,8 +15,10 @@
     }
     section:nth-child(3) {
 		grid-column: span 2;
-        width: 320px;
-        margin-left: 225px;
 	}
+
+    .zlwimg {
+        width: 650px;
+    }
 
 }
