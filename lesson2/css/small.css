@@ -1,4 +1,6 @@
-
+body{
+    font-family: 'Assistant', sans-serif;
+}
 header {
     display: block;
     background-color: #097eac;
@@ -60,4 +62,8 @@ section {
     background-color: rgb(243, 240, 235);
     margin-bottom: 1em;
     }
+
+p {
+    font-size: 18px;
+}
   
