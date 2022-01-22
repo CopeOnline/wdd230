@@ -26,12 +26,12 @@ nav ul li a.link{
     color: #F49D37; 
     font-size: 1.5rem;
     text-decoration: none;
-    padding: 0.35rem;
-    
+    padding: 0.15rem;    
 }
 nav ul {
     list-style-type: none; 
     text-align: center;
+    margin-left: -2em;
 }
 
 
