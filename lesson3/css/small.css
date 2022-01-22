@@ -8,7 +8,6 @@ body {
 header,
 main,
 footer {
-	max-width: 767px;
 	margin: 0 auto;
     padding: 10px;
 }
@@ -17,24 +16,27 @@ footer {
 	display: flex;
 	flex-flow: column;
 	align-items: center;
-	justify-content: center;
+    text-align: center;
     background-color: #006989;
+    padding: 10px;
 }
 
 nav ul li a.link{
-    display: block;
     color: #F49D37; 
     font-size: 1.5rem;
     text-decoration: none;
-    padding: 0.15rem;    
+    padding: 0.5px;  
+    margin-left: -2em;  
 }
 nav ul {
     list-style-type: none; 
-    text-align: center;
-    margin-left: -2em;
 }
-
-
+img.bio{
+    width: 99.9%;
+}
+img {
+    width:100%;
+}
 footer {
     color: #F49D37; 
 }
@@ -43,3 +45,4 @@ footer p {
     margin: 5px;
     padding: 0.35rem;
 }
+

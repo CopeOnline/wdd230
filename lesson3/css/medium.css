@@ -1,17 +1,38 @@
 @media only screen and (min-width: 37.5em) {
     
     body{
-        max-width: 960px;
+        max-width: 960PX;
+        margin: auto;
     }
-
     nav ul { 
         display: flex; 
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
+        font-size: 1.1rem;;
     }
     nav ul li { 
         flex: 1 1 auto; 
-        margin: 1rem;
+        margin: 2em;
     } 
     nav a {
         font-size: 0.75rem;
     }
+    main {
+        display: grid;
+		grid-template-columns: 1fr 1fr;
+        align-items: start;
+	}
+	main h2, p {
+		grid-column: span 2;
+	}
+
+    img.bio {
+        width: 100%;
+        margin-left: -160px;
+    }
+    img#brian {
+        margin-top: 50px;;
+    }
+
     }
