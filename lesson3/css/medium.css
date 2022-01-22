@@ -29,10 +29,13 @@
 
     img.bio {
         width: 100%;
-        margin-left: -160px;
+        margin-left: -130px;
     }
     img#brian {
         margin-top: 50px;;
+    }
+    img { 
+        width: 70%;
     }
 
     }
