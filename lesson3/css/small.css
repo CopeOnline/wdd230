@@ -1,1 +1,47 @@
-font-family: 'Exo', 'Merriweather Sans', sans-serif;
+
+body {
+    font-family: 'Exo', 'Merriweather Sans', sans-serif;
+    background-color: #EAEBED;
+    font-size: 16px;
+}
+
+header,
+main,
+footer {
+	max-width: 767px;
+	margin: 0 auto;
+}
+header,
+footer {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+    background-color: #006989;
+}
+
+nav{
+    margin: 0;
+}
+nav ul {
+    list-style-type: none; 
+    text-align: center;
+    padding: 0.75rem;
+    margin: 0;
+    display: block;
+ }
+
+nav ul li a.link{
+    color: #F49D37; 
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+footer {
+    color: #F49D37; 
+}
+
+footer p {
+    margin: 0;
+    padding: 0.55rem;
+}
