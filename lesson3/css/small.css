@@ -10,6 +10,7 @@ main,
 footer {
 	max-width: 767px;
 	margin: 0 auto;
+    padding: 10px;
 }
 header,
 footer {
@@ -20,28 +21,25 @@ footer {
     background-color: #006989;
 }
 
-nav{
-    margin: 0;
+nav ul li a.link{
+    display: block;
+    color: #F49D37; 
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 0.35rem;
+    
 }
 nav ul {
     list-style-type: none; 
     text-align: center;
-    padding: 0.75rem;
-    margin: 0;
-    display: block;
- }
-
-nav ul li a.link{
-    color: #F49D37; 
-    font-size: 1.5rem;
-    text-decoration: none;
 }
+
 
 footer {
     color: #F49D37; 
 }
 
 footer p {
-    margin: 0;
-    padding: 0.55rem;
+    margin: 5px;
+    padding: 0.35rem;
 }
