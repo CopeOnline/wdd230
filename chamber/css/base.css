@@ -8,7 +8,9 @@ body {
 header {
     background-color: #006989;
     padding: 10px;
+    font-size: 12px;
 }
+
 nav {
 	display: flex;
     flex: 1 1 auto;
@@ -16,5 +18,27 @@ nav {
 footer div { 
 	display: flex;
     flex: 1 1 auto;
+    background-color: #006989;
+}
 
+main p {
+    width: 390;
+    height: 10em;
+    border: 2px solid;
+    padding: 1rem;
+    background-color: rgb(226, 223, 223);
+}
+
+main p.spotThree, .join {
+    display: none;
+}
+
+nav ul img {
+    max-width: 100%;
+    height: auto;
+}
+
+img.social {
+    max-width: 100%;
+    height: auto;
 }
