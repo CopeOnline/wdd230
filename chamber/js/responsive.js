@@ -1,7 +1,7 @@
 const d = new Date();
 let year = d.getFullYear();
 
-document.querySelector(".currentyear").textContent += ` ${year}  |  Larry E. Copeland Jr  |  Idaho`;
+document.querySelector(".currentyear").textContent += `${year}`;
 
 const lastupdate = document.querySelector(".lastupdated");
-lastupdate.textContent = `Last Updated: ${document.lastModified}`;
+lastupdate.textContent += `Last Updated: ${document.lastModified}`;
