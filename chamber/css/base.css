@@ -11,12 +11,36 @@ header {
     font-size: 12px;
 }
 
-main p {
+main > p {
     width: 390;
     height: 5em;
     border: 2px solid;
     padding: 1rem;
     background-color: rgb(226, 223, 223);
+}
+main p.placeholder {
+    width: 390;
+    height: 15em;
+    border: 2px solid;
+    padding: 1rem;
+    background-color: rgb(226, 223, 223);
+    position: relative;
+    background-color: transparent;
+}
+main div p {
+   width: 75%;
+   height: 10%;
+   border: 2px solid lightgray;
+   padding: 1rem;
+   background-color: rgb(226, 223, 223);
+   margin-top: 20px;
+   margin-left: 30px;
+   position: absolute;
+}
+main div p.spotTwo {
+    width: 75%;
+    height: 10%;
+    bottom: -11%;
 }
 
 main p.spotThree, .join {
