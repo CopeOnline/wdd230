@@ -1,3 +1,4 @@
+
 const d = new Date();
 let year = d.getFullYear();
 const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
@@ -8,7 +9,7 @@ let monthname = month[d.getMonth()];
 document.querySelector(".currentyear").textContent += `${year}`;
 
 const lastupdate = document.querySelector(".lastupdated");
-lastupdate.textContent += `Last Updated: ${document.lastModified}`;
+lastupdate.textContent += `${document.lastModified}`;
 
 document.querySelector(".todaysDate").textContent = `${day}, ${d.getDate()} ${monthname} ${year}`;
 
@@ -19,3 +20,4 @@ function toggleMenu(){
 
 const x = document.getElementById("hamBtn");
 x.onclick = toggleMenu;
+
