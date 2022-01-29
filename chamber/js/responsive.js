@@ -10,4 +10,12 @@ document.querySelector(".currentyear").textContent += `${year}`;
 const lastupdate = document.querySelector(".lastupdated");
 lastupdate.textContent += `Last Updated: ${document.lastModified}`;
 
-document.querySelector(".todaysDate").textContent = `${day}, ${d.getDay()} ${monthname} ${year}`;
+document.querySelector(".todaysDate").textContent = `${day}, ${d.getDate()} ${monthname} ${year}`;
+
+function toggleMenu(){
+    document.getElementById("menu").classList.toggle("open");
+    document.getElementById("hamBtn").classList.toggle("open");
+}
+
+const x = document.getElementById("hamBtn");
+x.onclick = toggleMenu;
