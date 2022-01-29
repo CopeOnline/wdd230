@@ -18,29 +18,24 @@ main > p {
     padding: 1rem;
     background-color: rgb(226, 223, 223);
 }
-main p.placeholder {
+main div.placeholder {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
     width: 390;
     height: 15em;
     border: 2px solid gray;
     padding: 1rem;
     background-color: rgb(226, 223, 223);
-    position: relative;
-    background-color: transparent;
+    margin-bottom: 15px;;
 }
 main div p {
-   width: 75%;
-   height: 10%;
-   border: 2px solid lightgray;
-   padding: 1rem;
-   background-color: rgb(226, 223, 223);
-   margin-top: 20px;
-   margin-left: 30px;
-   position: absolute;
+    display: inline;
+    border: 1px solid rgb(170, 170, 170);
+    padding: 10px;
+    height: 6.1em;
 }
-main div p.spotTwo {
-    width: 75%;
-    height: 10%;
-    bottom: -11%;
+main div p.spotTwo, p.spotOne {
+    margin: 0;
 }
 
 main p.spotThree, .join {
