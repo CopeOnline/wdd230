@@ -12,7 +12,6 @@ header {
 }
 
 main > p {
-    width: 390;
     height: 5em;
     border: 2px solid gray;
     padding: 1rem;
@@ -21,7 +20,6 @@ main > p {
 main div.placeholder {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    width: 390;
     height: 15em;
     border: 2px solid gray;
     padding: 1rem;
@@ -50,6 +48,7 @@ nav button {
     color: #FE654F;
     width: 50px;
     height: 50px;
+    border: 1px solid gray;
 }
 
 ul {
@@ -164,4 +163,7 @@ footer div p span.bar, span.bar1, span.bar2 {
 
 footer p.compName {
     font-size: 19px;
+}
+hr {
+    color:#FE654F;
 }
