@@ -125,14 +125,15 @@ ul li a:hover {
     background-color:#FE654F;
     color:  #006989;
 }
+footer {
+    background-color: #006989;
+}
 footer div { 
 	display: flex;
     flex: 1 1 auto;
-    background-color: #006989;
     flex-flow: column;
     align-items: center;
     text-align: center;
-    padding-top: 10px;
     margin: 0;
 }
 footer p { 
@@ -154,8 +155,7 @@ footer div p {
 footer div p span.name {
     font-weight: 850;
     font-size: 18px;
-    padding: 5px;
-
+    letter-spacing: .1em;
 }
 footer div p span.bar, span.bar1, span.bar2 {
     display: none;
@@ -164,6 +164,13 @@ footer div p span.bar, span.bar1, span.bar2 {
 footer p.compName {
     font-size: 19px;
 }
+footer img {
+    padding-top: 10px;
+}
 hr {
-    color:#FE654F;
+    height: 2px;
+    padding: 0;
+    border: none;
+    align-items: center;
+    background-color: gray;
 }

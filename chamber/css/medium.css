@@ -47,9 +47,52 @@
     main .event {
         margin-right: 10px;
     }
-
     main div  {
         grid-gap: 5px;
     }
-    
+    footer div.chamberInfo {
+        display: grid;
+        grid-template-columns: 150px 300px 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    footer div .footerLogo {
+        grid-row: 1/3;
+        padding: 1em;
+    }
+    footer div p.compName {
+        text-align: start;
+        align-self: end;
+    }
+    footer div p.address {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        justify-self: start;
+        align-self: start;
+    }
+    footer div p.cntctInfo {
+        align-self: end;
+        font-size: 14px;
+        justify-self: center;
+    }
+    footer a {
+        align-self: start;
+        justify-self: center;
+    }
+    .authoredInfo span.bar, span.bar1, span.bar2{
+        display: block;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+    .authoredInfo {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 0;
+        justify-self: center;
+        margin-left: 10em;
+    }
+    .authoredInfo div {
+        margin-right:10em;
+        padding-bottom: 1em;
+    }
+
 }
