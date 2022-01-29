@@ -108,10 +108,28 @@ footer p {
     margin: 0;
     padding-top: 5px;
     color: #F49D37;
+    line-height: 1.5;
 }
 footer a {
     padding-top: 10px;
     text-decoration: none;
     font-size: 18px;
     color: #F49D37;
+}
+footer div p {
+    display: flex;
+    flex-flow: column wrap;
+}
+footer div p span.name {
+    font-weight: 850;
+    font-size: 18px;
+    padding: 5px;
+
+}
+footer div p span.bar, span.bar1, span.bar2 {
+    display: none;
+}
+
+footer p.compName {
+    font-size: 19px;
 }

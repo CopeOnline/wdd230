@@ -6,10 +6,10 @@ const month = ["January","February","March","April","May","June","July","August"
 let day = weekday[d.getDay()];
 let monthname = month[d.getMonth()];
 
-document.querySelector(".currentyear").textContent += `${year}`;
+document.querySelector(".currentyear").textContent += `\u00A9 ${year}`;
 
 const lastupdate = document.querySelector(".lastupdated");
-lastupdate.textContent += `${document.lastModified}`;
+lastupdate.textContent += `Last Modification: ${document.lastModified}`;
 
 document.querySelector(".todaysDate").textContent = `${day}, ${d.getDate()} ${monthname} ${year}`;
 
