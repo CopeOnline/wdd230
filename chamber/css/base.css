@@ -111,19 +111,16 @@ header p.todaysDate {
     font-weight: 500;
     background-color:rgb(1, 88, 114);
 }
-
 ul {
     display: none;
 }
-
 ul.open {
     display: block;
-    position: fixed;
-    height: 500px;
-    margin: 0;
+    position: absolute;
+    height: 1rem;
+    margin-top: 14em;
     left: 0px;
   }
-
 footer div { 
 	display: flex;
     flex: 1 1 auto;
@@ -134,7 +131,6 @@ footer div {
     padding-top: 10px;
     margin: 0;
 }
-
 footer p { 
     margin: 0;
     padding-top: 5px;
