@@ -50,18 +50,24 @@ nav button {
     color: #FE654F;
 }
 
-nav ul {
+ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    width: 100%;
+    height:100%;
 }
 
-nav ul li a {
+ul li a {
     display: block;
     padding: .8rem 2vw;
     text-decoration: none;
     border-top: 1px solid black;
-    color: white;
+    color: #F49D37;
+    background-color: #6B4B3E;
+    text-align: center;
+    font-size: 5em;
+
 }
 
 
@@ -105,12 +111,14 @@ header p.todaysDate {
     background-color:rgb(1, 88, 114);
 }
 
-nav ul {
+ul {
     display: none;
 }
-nav ul.open {
+
+ul.open {
     display: block;
-}
+    position: absolute;
+  }
 
 footer div { 
 	display: flex;
