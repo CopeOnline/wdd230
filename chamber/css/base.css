@@ -118,9 +118,14 @@ ul.open {
     display: block;
     position: absolute;
     height: 1rem;
-    margin-top: 14em;
+    margin-top: 15em;
     left: 0px;
   }
+
+ul li a:hover {
+    background-color:#FE654F;
+    color:  #006989;
+}
 footer div { 
 	display: flex;
     flex: 1 1 auto;
