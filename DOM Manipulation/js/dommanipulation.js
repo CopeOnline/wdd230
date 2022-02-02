@@ -17,8 +17,6 @@ btn.addEventListener('click', function() {
         delBtn.setAttribute("aria-Label", `Remove ${chapter}`)
         list.appendChild(listItem);
 
-        console.log(listItem);
-
         delBtn.addEventListener('click', function() {
             list.removeChild(listItem);
           })
