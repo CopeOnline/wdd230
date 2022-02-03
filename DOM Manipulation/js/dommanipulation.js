@@ -12,18 +12,19 @@ btn.addEventListener('click', function() {
         const delBtn = document.createElement('button');
 
         listItem.textContent = chapter;
-        listItem.appendChild(delBtn);
+        listItem.append(delBtn);
         delBtn.textContent = "❌";
         delBtn.setAttribute("aria-Label", `Remove ${chapter}`)
-        list.appendChild(listItem);
+        list.append(listItem);
 
         delBtn.addEventListener('click', function() {
-            list.removeChild(listItem);
+            list.remove(listItem);
           })
 
         input.focus();
 
         input.value="";
+    
 
     }else {
         console.log("no entry")
