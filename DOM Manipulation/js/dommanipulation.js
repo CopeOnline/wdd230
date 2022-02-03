@@ -18,10 +18,10 @@ btn.addEventListener('click', function() {
         list.append(listItem);
 
         delBtn.addEventListener('click', function() {
-            list.remove(listItem);
+            list.removeChild(listItem);
           })
 
-        input.focus();
+        input.focus({preventScroll:false});
 
         input.value="";
     
