@@ -9,7 +9,6 @@ async function getWeather() {
     const response = await fetch("http://api.openweathermap.org/data/2.5/weather?q=Shoshone,ID,USA&units=imperial&APPID=da28ef0488cf8a1538d20c2db5897dd8");
     let data = await response.json()
 
-    console.log(data)
     let newTemp = data['main']['temp']
     let icon = data['weather'][0]['icon'];
     let desc = data['weather'][0]['description'];
@@ -27,7 +26,6 @@ async function getWeather() {
 
     if (newTemp <= 50 && speed > 3.0) {
         chill = 35.74 + (0.6215*newTemp) - (35.75*speed**0.16) + (0.4275*newTemp*speed**0.16)
-        console.log(chill)
         chill = Math.round(chill)
         wChill.textContent = `Feels like ${chill}`
     }else {
