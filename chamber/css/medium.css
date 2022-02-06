@@ -2,26 +2,32 @@
   
     nav {
         display: grid;
-        grid-template-columns: 60px 300px 382px 1fr;
+        grid-template-columns: 60px 1fr 1fr 250px;
         justify-content: start;
     }
 
     nav div.social {
-        margin-left: 15em;
+        display: flex;
+        justify-content: end;
     }
     nav div.social img {
-        padding: .1em;
+        padding: .5em;
+    }
+    #hamBtn {
+        margin-left: 5em;
     }
     main {
         display: grid;
-        grid-template-columns: 600px 1fr;
-        margin-top: 1em;
+        grid-template-columns: 425px 1fr;
+        margin-bottom: 1em;
+        max-width: 640px;
+        margin: 0 auto;
     }
-    main p.hero {
+    main .hero {
         grid-column: 1/3;
-        margin: 0;
+        margin: 0 auto;
     }
-    main p.news {
+    main .localNews {
         display: grid;
         grid-column: 1/3;
         grid-row: 2/3;
@@ -29,26 +35,65 @@
     main div.placeholder {
         grid-column: 1/3;
         grid-row: 3/4;
-        margin: 0;
-        height: 5em;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
     }
-    main div p {
-        height: 3.5em;
+    .placeholder div.spotOne, .placeholder div.spotTwo {
+        margin: 0;
     }
-    main .join {
+    main .joinUs {
         display: grid;
+        position: relative;
         grid-column: 1/3;
         grid-row: 4/5;
-        margin-bottom: 0;
+        margin:0;
     }
-    main .event {
+    .joinUs div a {
+        display: block;
+        position: absolute;
+        top: 1em ;
+        left: 3em;
+        justify-content: center;
+        background-color: #6B4B3E; 
+        color: #F49D37;
+        padding: .5rem .5rem;
+        text-decoration: none;
+        font-size: 1.6rem;
+        font-weight: 600;
+        border-radius: 1rem;
+        width: 70%;
+        text-align: center;
+        box-shadow: 10px 5px 5px;
+    }
+    .joinUs p {
+        position: relative;
+        text-align: center;
+        color: #EAEBED;
+        margin-top: 5rem;
+    }
+
+    main .events {
+        grid-column: 1/2;
+        grid-row: 5/6;
         margin-right: 10px;
     }
-    main div  {
+    main .events a {
+        margin-left: 13rem;
+        font-size: 1.2rem;
+    }
+    main .events p {
+        margin: 0 5em 0 5em;
+    }
+    main div {
         grid-gap: 5px;
+    }
+    main .localWthr {
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+    footer {
+        margin-top: 1em;
     }
     footer div.chamberInfo {
         display: grid;
@@ -78,7 +123,7 @@
         align-self: start;
         justify-self: center;
     }
-    .authoredInfo span.bar, span.bar1, span.bar2{
+    .authoredInfo span.break, span.break1, span.break2{
         display: block;
         margin-left: 3px;
         margin-right: 3px;

@@ -1,5 +1,6 @@
 
 body {
+    position: relative;
     font-family: 'Exo', 'Merriweather Sans', sans-serif;
     background-color: #EAEBED;
     font-size: 16px;
@@ -10,34 +11,84 @@ header {
     padding: 10px;
     font-size: 12px;
 }
-
-main > p {
-    height: 5em;
+main .events, .localWthr, .localNews, .placeholder, .joinUs {
+    height: auto;
     border: 2px solid gray;
     padding: 1rem;
-    background-color: rgb(226, 223, 223);
+    background-color: #006989;
+    margin-top: 1em;
 }
 main div.placeholder {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    height: 15em;
+    height: auto;
     border: 2px solid gray;
     padding: 1rem;
-    background-color: rgb(226, 223, 223);
     margin-bottom: 15px;;
 }
-main div p {
-    display: inline;
+main div.placeholder div {
+    display: block;
     border: 1px solid rgb(170, 170, 170);
     padding: 10px;
-    height: 6.1em;
 }
-main div p.spotTwo, p.spotOne {
+main div.spotTwo, div.spotOne, div.spotThree {
     margin: 0;
+    text-align: center;
+    color: #EAEBED;
+}
+main div.spotOne h2, div.spotTwo h2, div.spotThree h2 {
+    color: #F49D37;
 }
 
-main p.spotThree, .join {
+.joinUs, .placeholder div.spotThree {
     display: none;
+}
+main div.hero{
+    position: relative;
+
+}
+main div img.heroImg {
+    position: relative;
+    display: block;
+    width: 960px;
+    object-fit: cover;
+    margin-bottom: 1em;
+
+}
+.heroBtn {
+    position: absolute;
+    background-color: #006989; 
+    color: #F49D37;
+    padding: .5rem .5rem;
+    text-decoration: none;
+    font-size: 2.1rem;
+    border-radius: 1rem;
+    height: 2.3rem;
+    right: 3rem;
+
+}
+.events h1, .events h2, .events p, .events a {
+    margin: .2em;
+    align-content: center;
+    color:  #EAEBED; 
+    text-align: center; 
+}
+main div.events h1, div.localNews h1 {
+    color: #F49D37;
+}
+.events a {
+    text-decoration: none;
+    margin-left: 8em;
+    color: #F49D37;
+}
+.events a:hover {
+    text-decoration: none;
+    margin-left: 8em;
+    background-color: #FE654F;
+}
+.localNews {
+    text-align: center;
+    color: #EAEBED;
 }
 
 nav button {
@@ -64,8 +115,8 @@ ul li a {
     padding: .8rem ;
     text-decoration: none;
     border: 1px solid black;
-    color: #F49D37;
-    background-color: #6B4B3E;
+    color: #EAEBED;
+    background-color: #006989;
     text-align: center;
     font-size: 5em;
 }
@@ -83,12 +134,12 @@ nav {
     align-items: center;
 }
 nav div p {
-    display: flex;
+    display: block;
     flex-direction: column;
     font-size: 1.75em;
     margin: 0;
     padding: 0 6px 0px 6px;
-    color: #F49D37;
+    color: #EAEBED;
     font-weight: 550;
 }
 nav div p.lineTwo {
@@ -97,7 +148,11 @@ nav div p.lineTwo {
 }
 
 nav div.social{
-    padding-left: 2.3em;
+    display: flex;
+    padding-left: 1em;
+}
+nav div.social img {
+    padding: .4em;
 }
 header p.todaysDate {
     align-items: center;
@@ -105,7 +160,7 @@ header p.todaysDate {
     border: 2px solid gray;
     margin: 0;
     padding: .5em;
-    color: #F49D37;
+    color: #EAEBED;
     font-size: 1.5em;
     font-weight: 500;
     background-color:rgb(1, 88, 114);
@@ -116,14 +171,15 @@ ul {
 ul.open {
     display: block;
     position: absolute;
+    z-index: 1;
     height: 1rem;
     margin-top: 15em;
     left: 0px;
   }
 
-ul li a:hover {
+ul li a:hover, footer a:hover {
     background-color:#FE654F;
-    color:  #006989;
+    color:  #dfdb06;
 }
 footer {
     background-color: #006989;
@@ -139,14 +195,14 @@ footer div {
 footer p { 
     margin: 0;
     padding-top: 5px;
-    color: #F49D37;
+    color: #EAEBED;
     line-height: 1.5;
 }
 footer a {
     padding-top: 10px;
     text-decoration: none;
     font-size: 18px;
-    color: #F49D37;
+    color: #EAEBED;
 }
 footer div p {
     display: flex;
@@ -157,7 +213,7 @@ footer div p span.name {
     font-size: 18px;
     letter-spacing: .1em;
 }
-footer div p span.bar, span.bar1, span.bar2 {
+footer div p span.break, span.break1, span.break2 {
     display: none;
 }
 
@@ -174,3 +230,4 @@ hr {
     align-items: center;
     background-color: gray;
 }
+
