@@ -232,4 +232,19 @@ hr {
     align-items: center;
     background-color: gray;
 }
+#banner {
+    background-color: #FE654F;
+    color: black;
+    padding: 5px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
+}
 
+#banner {
+    display: none;
+}
+
+#banner.open {
+    display: block;
+}
