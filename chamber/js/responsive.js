@@ -23,7 +23,6 @@ x.onclick = toggleMenu;
 
 function toggleBanner(){
     document.getElementById("banner").classList.toggle("open");
-    console.log("ran");
 }
 
 if (d.getDay() == 1) {
