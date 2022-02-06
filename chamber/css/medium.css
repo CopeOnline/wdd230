@@ -49,6 +49,11 @@
         grid-row: 4/5;
         margin:0;
     }
+    .heroBtn {
+        bottom: 2rem;
+        right: 2rem;
+        font-size: 2rem;
+    }
     .joinUs div a {
         display: block;
         position: absolute;
