@@ -38,7 +38,7 @@ main div.spotTwo, div.spotOne, div.spotThree {
     color: #EAEBED;
 }
 main div.spotOne h2, div.spotTwo h2, div.spotThree h2 {
-    color: #F49D37;
+    color: #EAEBED;
 }
 
 .joinUs, .placeholder div.spotThree {
@@ -59,7 +59,7 @@ main div.hero{
 .heroBtn {
     position: absolute;
     background-color: #006989; 
-    color: #F49D37;
+    color: #EAEBED;
     padding: .5rem .5rem;
     text-decoration: none;
     text-align: center;
@@ -67,7 +67,7 @@ main div.hero{
     height: auto;
     bottom: 1rem;
     right: 1rem;
-    box-shadow: 5px 5px 5px #F49D37;
+    box-shadow: 5px 5px 5px #EAEBED;
 
 }
 .events h1, .events h2, .events p, .events a {
@@ -77,12 +77,12 @@ main div.hero{
     text-align: center; 
 }
 main div.events h1, div.localNews h1 {
-    color: #F49D37;
+    color: #EAEBED;
 }
 .events a {
     text-decoration: none;
     margin-left: 8em;
-    color: #F49D37;
+    color:#EAEBED;
 }
 .events a:hover {
     text-decoration: none;
@@ -139,7 +139,7 @@ main div.events h1, div.localNews h1 {
     grid-row: 6/7;
 }
 .localWthr h2{
-    color: #F49D37;
+    color: #EAEBED;
     height: 1em;
 }
 .localWthr .wIcon {
@@ -153,9 +153,10 @@ main div.events h1, div.localNews h1 {
 }
 .localWthr p.deg {
     font-size: 2.5rem;
-    color: yellow;
+    color: #dff51d;
     justify-self: center;
     align-self: center;
+    font-weight: 600;
 }
 nav button {
     margin: .2rem 2vw;
