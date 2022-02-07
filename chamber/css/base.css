@@ -86,7 +86,6 @@ main div.events h1, div.localNews h1 {
 }
 .events a:hover {
     text-decoration: none;
-    margin-left: 8em;
     background-color: #FE654F;
 }
 .localNews {
