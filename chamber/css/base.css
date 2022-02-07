@@ -246,7 +246,7 @@ ul.open {
 
 ul li a:hover, footer a:hover {
     background-color:#FE654F;
-    color:  #dfdb06;
+    color:  #dff51d;
 }
 footer {
     background-color: #006989;
@@ -270,6 +270,8 @@ footer a {
     text-decoration: none;
     font-size: 18px;
     color: #EAEBED;
+    width: 150px;
+    height: 30px;
 }
 footer div p {
     display: flex;
