@@ -59,7 +59,7 @@ main div.hero{
 .heroBtn {
     position: absolute;
     background-color: #006989; 
-    color: #EAEBED;
+    color: #dff51d;
     padding: .5rem .5rem;
     text-decoration: none;
     text-align: center;
@@ -67,7 +67,7 @@ main div.hero{
     height: auto;
     bottom: 1rem;
     right: 1rem;
-    box-shadow: 5px 5px 5px #EAEBED;
+    box-shadow: 5px 5px 5px;
 
 }
 .events h1, .events h2, .events p, .events a {
@@ -82,7 +82,7 @@ main div.events h1, div.localNews h1 {
 .events a {
     text-decoration: none;
     margin-left: 8em;
-    color:#EAEBED;
+    color:#dff51d;
 }
 .events a:hover {
     text-decoration: none;
