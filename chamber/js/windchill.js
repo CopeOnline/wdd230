@@ -25,19 +25,20 @@ async function getWeather() {
     wSpeed.textContent = `${currentspeed} mph`
 
     if (newTemp <= 50 && speed > 3.0) {
-        const chill = 35.74 + (0.6215*newTemp) - (35.75*speed**0.16) + (0.4275*newTemp*speed**0.16)
+        let chill = 35.74 + (0.6215*newTemp) - (35.75*speed**0.16) + (0.4275*newTemp*speed**0.16)
         chill = Math.round(chill)
         wChill.textContent = `Feels like ${chill}`
     }else {
         console.log('variable out of range')
     }
+    return data
     }
     
-getWeather();
+let weatherData = getWeather();
 
 
 
-
+console.log(weatherData)
 
 
 
