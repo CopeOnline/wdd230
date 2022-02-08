@@ -6,7 +6,7 @@ const wChill = document.querySelector(".windChill")
 
 
 async function getWeather() {
-    const response = await fetch("http://api.openweathermap.org/data/2.5/weather?q=Shoshone,ID,USA&units=imperial&APPID=da28ef0488cf8a1538d20c2db5897dd8");
+    const response = await fetch("https://api.openweathermap.org/data/2.5/weather?q=Shoshone,ID,USA&units=imperial&APPID=da28ef0488cf8a1538d20c2db5897dd8");
     let data = await response.json()
 
     let newTemp = data['main']['temp']
@@ -14,7 +14,7 @@ async function getWeather() {
     let desc = data['weather'][0]['description'];
     let speed = data['wind']['speed']
 
-    weatherIcon.src = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+    weatherIcon.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
     weatherIcon.alt = `open weather map API icon: ${desc}`;
     iconDesc.textContent = desc.toUpperCase()
 
