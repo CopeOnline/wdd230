@@ -29,16 +29,15 @@ async function getWeather() {
         chill = Math.round(chill)
         wChill.textContent = `Feels like ${chill}`
     }else {
-        console.log('variable out of range')
+        wChill.textContent = `Feels like ${newTemp}`
     }
-    return data
     }
     
-let weatherData = getWeather();
+getWeather();
 
 
 
-console.log(weatherData)
+
 
 
 
