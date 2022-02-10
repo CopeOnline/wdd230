@@ -6,7 +6,7 @@ const wChill = document.querySelector(".windChill")
 
 let apiInfo = "https://api.openweathermap.org/data/2.5/weather?q=Shoshone,ID,USA&units=imperial&APPID=da28ef0488cf8a1538d20c2db5897dd8"
 
-let data, newTemp, speed;
+let data, newTemp, speed, icon, desc;
 
 async function getWeather() {
     const response = await fetch(apiInfo);
@@ -18,13 +18,7 @@ async function getWeather() {
 
 function fillData(){
     newTemp = data['main']['temp']
-    let icon = data['weather'][0]['icon'];
-    let desc = data['weather'][0]['description'];
     speed = data['wind']['speed']
-
-    weatherIcon.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
-    weatherIcon.alt = `open weather map API icon: ${desc}`;
-    iconDesc.textContent = desc.toUpperCase()
 
     let currentTemp = Math.round(newTemp)
     localtemp.textContent += `${currentTemp}`;
@@ -34,6 +28,15 @@ function fillData(){
 
     return newTemp, speed
     }
+
+function getIconDesc() {
+    icon = data['weather'][0]['icon'];
+    desc = data['weather'][0]['description'];
+
+    weatherIcon.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
+    weatherIcon.alt = `open weather map API icon: ${desc}`;
+    iconDesc.textContent = desc.toUpperCase()
+} 
 
 function calculateWindChill() {
     if (newTemp <= 50 && speed > 3.0) {
@@ -45,7 +48,7 @@ function calculateWindChill() {
     }
     }
   
-getWeather().then(fillData).then(calculateWindChill);
+getWeather().then(fillData).then(getIconDesc).then(calculateWindChill);
 
 
 
