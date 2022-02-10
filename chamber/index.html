@@ -43,8 +43,12 @@
         <p class="todaysDate">todays date</p>
     </header>
     <main>
-        <div class="hero">                           
-            <img class="heroImg" src="images/hero_img.jpg" alt="old schoolhouse">
+        <div class="hero">   
+            <picture>                        
+            <source srcset="images/wdd230-org_600.jpg" media="(max-width: 600px)">
+            <source srcset="images/wdd230-org_960.jpg" media="(max-width: 960px)">
+            <img class="heroImg" src="images/wdd230-org_1200.jpg" alt="group meeting"/>   
+            </picture>
             <div class="callToAction">
                 <a class="heroBtn" href="#">Join the chamber</a>
             </div>
