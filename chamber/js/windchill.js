@@ -42,7 +42,7 @@ function calculateWindChill() {
     if (newTemp <= 50 && speed > 3.0) {
         let chill = 35.74 + (0.6215*newTemp) - (35.75*speed**0.16) + (0.4275*newTemp*speed**0.16)
         chill = Math.round(chill)
-        wChill.innerHTML = `Feels like ${chill}&#176;F `
+        wChill.innerHTML = `Feels like ${chill}&#176;F`
     }else {
         wChill.textContent = `N/A`
     }
