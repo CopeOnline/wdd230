@@ -232,7 +232,7 @@ header p.todaysDate {
     color: #EAEBED;
     font-size: 1.5em;
     font-weight: 500;
-    background-color:#6B4B3E;
+    background-color:rgb(1, 88, 114);
 }
 ul {
     display: none;
