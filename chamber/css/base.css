@@ -239,6 +239,7 @@ header p.todaysDate {
     font-size: 1.5em;
     font-weight: 500;
     background-color:#6B4B3E;
+    border: 2px solid gray;
 }
 ul {
     display: none;
