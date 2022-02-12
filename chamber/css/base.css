@@ -232,7 +232,7 @@ nav div.social img {
 header p.todaysDate {
     align-items: center;
     text-align: center;
-    border: 2px solid gray;
+    border: 2px solid rgb(88, 83, 83);
     margin: 0;
     padding: .5em;
     color: #EAEBED;
