@@ -45,6 +45,7 @@ main {
     grid-template-rows: 1fr 1fr 1fr;
     margin: 2em 3em 2em 3em;
     max-width: max-content;
+    max-height: max-content;
 }
 main .events {
     grid-column: 1/2;
@@ -112,7 +113,6 @@ main div.placeholder div.spotThree {
 main div.placeholder {
     grid-column: 3/4;
     grid-row: 1/5;
-    height: auto;
     margin: 0;
     display: grid;
     grid-template-columns: 1fr;
@@ -121,15 +121,12 @@ main div.placeholder {
 }
 main div p.spotOne {
     grid-row: 1/2;
-    height: auto;
 }
 main div p.spotTwo {
     grid-row: 2/3;
-    height: auto;
 }
 main div p.spotThree {
     grid-row: 3/4;
-    height: auto;
     width: auto;
     margin: 0;
 }
