@@ -14,7 +14,7 @@ if (numVisits !== 0) {
 }else {
     localStorage.setItem('visits', 1)
     localStorage.setItem("dateVisited", today);
-    daysBwtnVisits = 0
+    daysBwtnVisits = "Welcome"
 
 }
 
