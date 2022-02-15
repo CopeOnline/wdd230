@@ -16,7 +16,8 @@ async function getWeather() {
 
 }    
 
-function fillData(){
+const fillData = async () => {
+    await getWeather();
     newTemp = data['main']['temp']
     speed = data['wind']['speed']
 
@@ -29,7 +30,8 @@ function fillData(){
     return newTemp, speed
     }
 
-function getIconDesc() {
+const getIconDesc = async () => {
+    await fillData();
     let icon = data['weather'][0]['icon'];
     let desc = data['weather'][0]['description'];
 
@@ -38,7 +40,8 @@ function getIconDesc() {
     iconDesc.textContent = desc.toUpperCase()
 } 
 
-function calculateWindChill() {
+const calculateWindChill = async () => {
+    await getIconDesc();
     if (newTemp <= 50 && speed > 3.0) {
         let chill = 35.74 + (0.6215*newTemp) - (35.75*speed**0.16) + (0.4275*newTemp*speed**0.16)
         chill = Math.round(chill)
@@ -48,7 +51,7 @@ function calculateWindChill() {
     }
     }
   
-getWeather().then(fillData).then(getIconDesc).then(calculateWindChill);
+calculateWindChill();
 
 
 
