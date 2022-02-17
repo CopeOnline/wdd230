@@ -16,7 +16,7 @@
     #hamBtn {
         margin-left: 5em;
     }
-    main {
+  .index {
         display: grid;
         grid-template-columns: 400px 1fr;
         margin-bottom: 1em;
