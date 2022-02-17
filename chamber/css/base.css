@@ -339,6 +339,7 @@ hr {
     padding: 2px 16px;
     background-color: #006989;
     color: #EAEBED;
+    text-align: center;
 }
 .vert{
     margin: 1em 1em 1em 1em;
@@ -347,8 +348,10 @@ hr {
     width: 266px;
     background-color: #006989;
     color: #EAEBED;
+    text-align: center;
 }
 .demographics {
     display: block;
     margin-bottom: 1em;
+    text-align: left;
 }
