@@ -355,3 +355,6 @@ hr {
     margin-bottom: 1em;
     text-align: left;
 }
+.roster {
+    font-weight: 600;
+}
