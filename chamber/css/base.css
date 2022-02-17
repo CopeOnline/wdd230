@@ -340,11 +340,15 @@ hr {
     background-color: #006989;
     color: #EAEBED;
 }
- .vert{
+.vert{
     margin: 1em 1em 1em 1em;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     padding: 2px 16px;
     width: 266px;
     background-color: #006989;
     color: #EAEBED;
+}
+.demographics {
+    display: block;
+    margin-bottom: 1em;
 }
