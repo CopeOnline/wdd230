@@ -222,7 +222,6 @@
     }
     main.disc img:hover { 
         transform: scale(1.5);
-        border: none;
     }
 
 
