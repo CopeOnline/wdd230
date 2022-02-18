@@ -151,4 +151,13 @@
         padding-bottom: 1em;
     }
 
-}
+    main.disc{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(7, 1fr);
+    }
+
+    .card{
+        border-radius: 1em;
+    }
+}   

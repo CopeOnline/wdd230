@@ -174,8 +174,6 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    width: 100%;
-    height:100%;
 }
 
 ul li a {
@@ -325,34 +323,46 @@ hr {
     display: block;
 }
 
-.disc {
+main.disc {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .disc img {
     margin-top: 1em;
+    border: 2px solid #EAEBED;
 }
-.card {
-    margin: 1em 1em 1em 1em;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+.intro{
+    margin: 1em 0 1em 0;
+    box-shadow: 0 4px 8px 4px rgba(0,0,0,0.4);
     padding: 2px 16px;
     background-color: #006989;
     color: #EAEBED;
     text-align: center;
+
+}
+.card {
+    margin: 1em 0 1em 0;
+    box-shadow: 0 4px 8px 4px rgba(0,0,0,0.4);
+    padding: 2px 16px;
+    background-color: #006989;
+    color: #EAEBED;
+    text-align: center;
+    width: 375px;
 }
 .vert{
-    margin: 1em 1em 1em 1em;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 1em 0 1em 0;
+    box-shadow: 0 4px 8px 4px rgba(0,0,0,0.4);
     padding: 2px 16px;
     width: 266px;
     background-color: #006989;
     color: #EAEBED;
     text-align: center;
+    border-radius: 1em;
 }
-.demographics {
+ul.demographics {
     display: block;
-    margin-bottom: 1em;
+    margin: 0 0 1em 0;
     text-align: left;
 }
 .roster {
