@@ -15,8 +15,10 @@
     }
     #hamBtn {
         margin-left: 5em;
+        grid-column: 4/5;
+        grid-row: 1/2;
     }
-  .index {
+    .index {
         display: grid;
         grid-template-columns: 400px 1fr;
         margin-bottom: 1em;
