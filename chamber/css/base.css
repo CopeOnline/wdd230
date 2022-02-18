@@ -248,7 +248,8 @@ ul.open {
     z-index: 1;
     height: 1rem;
     margin-top: 6.5em;
-    left: 0px;
+    right: 0;
+    width: 100%
   }
 
 ul li a:hover, footer a:hover {
@@ -354,7 +355,7 @@ main.disc {
     margin: 1em 0 1em 0;
     box-shadow: 0 4px 8px 4px rgba(0,0,0,0.4);
     padding: 2px 16px;
-    width: 266px;
+    width: 270px;
     background-color: #006989;
     color: #EAEBED;
     text-align: center;
