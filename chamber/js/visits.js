@@ -6,7 +6,7 @@ let today = Date.now();
 let numVisits = Number(localStorage.getItem("visits"));
 let lastVisit = localStorage.getItem('dateVisited');
 let daysBwtnVisits, difference;
-
+ 
 if (numVisits !== 0) {
     localStorage.setItem("dateVisited", today);
     difference = today - lastVisit
