@@ -4,14 +4,16 @@ let year = d.getFullYear();
 const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 let day = weekday[d.getDay()];
-let monthname = month[d.getMonth()];
+let monthName = month[d.getMonth()];
 
 document.querySelector(".currentyear").textContent += `\u00A9 ${year} GS Chamber`;
 
 const lastupdate = document.querySelector(".lastupdated");
 lastupdate.textContent += `Last Modification: ${document.lastModified}`;
 
-document.querySelector(".todaysDate").textContent = `${day}, ${d.getDate()} ${monthname} ${year}`;
+let tempDate = `${d.getDate()} ${monthName} ${year}`
+
+document.querySelector(".todaysDate").textContent = `${day}, ${tempDate}`;
 
 function toggleMenu(){
     document.getElementById("menu").classList.toggle("open");
@@ -21,4 +23,7 @@ function toggleMenu(){
 const x = document.getElementById("hamBtn");
 x.onclick = toggleMenu;
 
-
+function hiddenDate() {
+    let tempDate = `${d.getDate()} ${monthName} ${year}`
+    document.getElementById("todayDate").value = tempDate;
+}

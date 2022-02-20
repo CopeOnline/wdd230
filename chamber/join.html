@@ -40,7 +40,30 @@
         <p class="todaysDate">todays date</p>
     </header>
     <main class="join">
+        <h1>Join the Chamber of Commerce</h1>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="info">First Name* <input type="text" name="fname" required></label>
+                <label class="info">Last Name* <input type="text" name="lname" required></label>
+                <label class="info">Title <input type="text" name="title" pattern="([\p{L}\s-]){7,}" placeholder="Position" ></label>
+                <label class="info">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="info">Cell Phone Number* <input type="te1" name="phone" placeholder="12355551234" required></label>
+                <label class="info">Business Name* <input type="text" name="bName" required></label>
+                <label class="info">Business Description <input type="textarea" name="description" placeholder="Brief description"></label>
+                <input type="hidden" name="datetime" id="todayDate">
+            </fieldset>
+            <fieldset>
+                <legend>Membership Level</legend>
+                <div>level</div>
+                <label class="sbs"><input type="radio" name="level" value="beginner"> Beginner</label>
+                <label class="sbs"><input type="radio" name="level" value="intermediate"> Intermediate</label>
+                <label class="sbs"><input type="radio" name="level" value="advanced"> Advanced</label>
+                
+            </fieldset>
     
+            <input type="submit" value="Start My Membership"  class="submitBtn">
+        </form>
     </main>
     <footer>
         <div class="chamberInfo">
@@ -64,7 +87,6 @@
         </div>      
     </footer>
     <script src="js/responsive.js"></script>
-    <script src="js/visits.js"></script>
-    <script src="js/lazyloadimages.js"></script>
+    <script>hiddenDate()</script>
 </body>
 </html>
