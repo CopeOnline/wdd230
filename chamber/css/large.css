@@ -160,5 +160,11 @@ footer div.authoredInfo {
     margin-left: 24em;
     padding-bottom: 1em;
 }
-
+.join h1 {
+    margin: 1em 0 1em 14rem;
+}
+form {
+    max-width: 960px;
+    margin: 0 auto;
+}
 }
