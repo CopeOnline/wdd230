@@ -48,21 +48,21 @@
                 <label class="info">Last Name* <input type="text" name="lname" required></label>
                 <label class="info">Title <input type="text" name="title" pattern="([\p{L}\s-]){7,}" placeholder="Position" ></label>
                 <label class="info">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                <label class="info">Cell Phone Number* <input type="te1" name="phone" placeholder="12355551234" required></label>
+                <label class="info">Cell Phone Number* <input type="tel" name="phone" placeholder="12355551234" required></label>
                 <label class="info">Business Name* <input type="text" name="bName" required></label>
-                <label class="info">Business Description <input type="textarea" name="description" placeholder="Brief description"></label>
+                <label class="info">Business Description <textarea name="description" placeholder="Brief description"></textarea></label>   
                 <input type="hidden" name="datetime" id="todayDate">
             </fieldset>
             <fieldset>
                 <legend>Membership Level</legend>
-                <div>level</div>
-                <label class="sbs"><input type="radio" name="level" value="beginner"> Beginner</label>
-                <label class="sbs"><input type="radio" name="level" value="intermediate"> Intermediate</label>
-                <label class="sbs"><input type="radio" name="level" value="advanced"> Advanced</label>
-                
+                <div>Choose a level</div>
+                <label class="level"><input type="radio" name="level" value="NP" required> Non-Profit Membership</label>
+                <label class="level"><input type="radio" name="level" value="bronze"> Bronze Membership</label>
+                <label class="level"><input type="radio" name="level" value="silver"> Silver Membership</label>
+                <label class="level"><input type="radio" name="level" value="gold"> Gold Membership</label>
             </fieldset>
     
-            <input type="submit" value="Start My Membership"  class="submitBtn">
+            <label class="submit"><input type="submit" value="Start My Membership"  class="submitBtn"></label>
         </form>
     </main>
     <footer>
