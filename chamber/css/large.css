@@ -167,4 +167,13 @@ form {
     max-width: 960px;
     margin: 0 auto;
 }
+form fieldset {
+    font-size: 1em;
+}
+form legend {
+    font-size: 1.5em;
+}
+form label.info, form label.level, div{
+    margin-left: 1em;
+}
 }
