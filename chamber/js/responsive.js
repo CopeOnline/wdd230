@@ -24,6 +24,8 @@ const x = document.getElementById("hamBtn");
 x.onclick = toggleMenu;
 
 function hiddenDate() {
-    let tempDate = `${d.getDate()} ${monthName} ${year}`
+    const time = [d.getHours(), d.getMinutes(), d.getSeconds()];
+    let currentTime = `${time[0]}:${time[1]}:${time[2]}`
+    let tempDate = `${d.getDate()} ${monthName} ${year}, ${currentTime}`
     document.getElementById("todayDate").value = tempDate;
 }
