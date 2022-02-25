@@ -377,14 +377,17 @@ main.disc img {
     filter: blur(0em);
     transition: filter 0.5s;
   }
+.join h1 {
+    margin-left: 1em;
+}
 
 form fieldset {
-    border-radius: 2rem;
-    border: 5px solid #6B4B3E;
+    border: none;
     font-size: 1.5em;
 }
 form legend {
-    margin-left: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
     color: #006989;
 }
 form label.info {
@@ -394,7 +397,7 @@ form label.info {
     font-size: 1em;
     max-width: 25rem;
 }
-form fieldset:nth-child(2) {
+form fieldset:nth-child(1), form fieldset:nth-child(2) {
     margin: .75em 0 1em 0;
 }
 form label.info input, form label.info textarea{
@@ -402,7 +405,7 @@ form label.info input, form label.info textarea{
     padding: 5px 10px;
 }
 form label.info input:required {
-    border-left: 10px red solid;
+    border-left: 10px #fa2222 solid;
 }
 form label.info textarea {
     height: 10rem;
@@ -427,4 +430,7 @@ form input.submitBtn{
     background-color: #FE654F;
     border: none;
     max-width: 35rem;
+}
+.thanks {
+    margin: 1em 1em 1em 1em;
 }
