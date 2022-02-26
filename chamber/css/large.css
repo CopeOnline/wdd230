@@ -12,9 +12,7 @@ ul {
     display: flex;
     margin-left:30em;
 }
-nav ul a.homebtn {
-    display: none;
-}
+
 ul li a {
     font-size: 2em;
     background-color: #006989;

@@ -159,6 +159,9 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 250px 500px 500px 500px 500px 400px 50px;
     }
+    ul.demographics {
+        font-size: 1.2em;
+    }
     .card{
         border-radius: 1em;
     }
