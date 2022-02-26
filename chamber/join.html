@@ -48,12 +48,12 @@
                 <label class="info">Last Name* <input type="text" name="lname" required></label>
                 <label class="info">Title <input type="text" name="title" pattern="([\p{L}\s-]){7,}" placeholder="Position" ></label>
                 <label class="info">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                <label class="info">Mobile Phone Number* <input type="tel" name="phone" placeholder="12355551234" required></label>
+                <label class="info">Phone* <input type="tel" name="phone" placeholder="12355551234" required></label>
             </fieldset>
             <fieldset>
                 <legend>Business Information</legend>
                 <label class="info">Business Name* <input type="text" name="bName" required></label>
-                <label class="info">Business Description <textarea name="description" placeholder="Brief description"></textarea></label>   
+                <label class="info">Business Description<textarea name="description" placeholder="Brief description of business"></textarea></label>   
                 <input type="hidden" name="datetime" id="todayDate">
             </fieldset>
             <fieldset>
@@ -63,7 +63,42 @@
                 <label class="level"><input type="radio" name="level" value="silver"> Silver Membership</label>
                 <label class="level"><input type="radio" name="level" value="gold"> Gold Membership</label>
             </fieldset>
-    
+            <aside>
+                <div class="benefits">
+                    <h2>Memebership Benefits</h2>
+                    <h3>Non-Profit Members</h3>
+                    <ul>
+                        <li>No annual cost</li>
+                        <li>Business listing in our directory</li>
+                        <li>Email alerts about upcoming chamber events</li>
+                    </ul>
+                    <h3>Bronze Members</h3>
+                    <ul>
+                        <li>Annual cost: $100</li>
+                        <li>Business listing in our directory</li>
+                        <li>Company spotlight on our website</li>
+                        <li>Email alerts about upcoming chamber events</li>
+                    </ul>
+                    <h3>Silver Members</h3>
+                    <ul>
+                        <li>Annual Cost: $250</li>
+                        <li>Business listing in our directory</li>
+                        <li>Company spotlight on our website</li>
+                        <li>Email alerts about upcoming chamber events</li>
+                        <li>Special chamber events discounts</li>
+                    </ul>
+                    <h3>Gold Members</h3>
+                        <ul>
+                            <li>Annual Cost: $500</li>
+                            <li>Business listing in our directory</li>
+                            <li>Company spotlight on our website</li>
+                            <li>Email alerts about upcoming chamber events</li>
+                            <li>Special chamber events discounts</li>
+                            <li>Access to chamber sponsored trainings and lectures</li>
+                            <li>Business listing on chamber advertisings</li>
+                        </ul>
+                </div>
+            </aside>
             <label class="submit"><input type="submit" value="Join Now"  class="submitBtn"></label>
         </form>
     </main>

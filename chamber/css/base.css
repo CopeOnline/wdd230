@@ -378,12 +378,20 @@ main.disc img {
     transition: filter 0.5s;
   }
 .join h1 {
-    margin-left: 1em;
+    margin: 0 auto;
+    text-align: center;
 }
 
 form fieldset {
     border: none;
     font-size: 1.5em;
+    padding-block-end: 0;
+    padding-inline-end: 0;
+    padding-inline-start: 0;
+    padding-block-start: 0;
+    margin-inline-start: 0;
+    margin-block-end: 0;
+    margin-inline-end: 0;
 }
 form legend {
     font-size: 2rem;
@@ -408,7 +416,7 @@ form label.info input:required {
     border-left: 10px #fa2222 solid;
 }
 form label.info textarea {
-    height: 10rem;
+    height: 3rem;
     margin-bottom: .5em;
 }
 form label.level {
@@ -432,4 +440,7 @@ form input.submitBtn{
 }
 .thanks {
     margin: 1em 1em 1em 1em;
+}
+aside {
+    display: none;
 }

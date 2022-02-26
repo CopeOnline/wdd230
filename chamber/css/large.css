@@ -161,19 +161,30 @@ footer div.authoredInfo {
     padding-bottom: 1em;
 }
 .join h1 {
-    margin: 1em 0 1em 14rem;
+    margin-bottom: .5em;
 }
 form {
     max-width: 960px;
     margin: 0 auto;
+    grid-template-rows: 22rem 12rem 10rem 1fr;
 }
 form fieldset {
     font-size: 1em;
 }
+form fieldset:nth-child(1), form fieldset:nth-child(2) {
+    margin: 0;
+}
 form legend {
     font-size: 1.5em;
 }
-form label.info, form label.level, div{
-    margin-left: 1em;
+form label.info {
+    margin: 10px 0 ;
 }
+form label.level {
+    padding: 2px 0;  
+}
+form label.info textarea {
+    margin-bottom: 0;
+}
+
 }
