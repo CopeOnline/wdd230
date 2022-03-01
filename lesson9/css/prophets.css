@@ -6,15 +6,15 @@ body {
     flex-direction: column;
 }
 h1 {
-    color: rgb(44, 10, 238);
+    color: rgb(10, 3, 54);
     margin-bottom: 0;
 }
 section {
     border: 2px solid gray;
     text-align: center;
     margin: 5px 0;
-    background-color: rgb(145, 149, 173);
-    color: rgb(44, 10, 238);
+    background-color: rgb(238, 172, 172);
+    color: rgb(32, 9, 231);
     box-shadow: 0 0 10px 5px grey;
 }
 p {
