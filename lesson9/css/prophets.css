@@ -15,7 +15,7 @@ section {
     margin: 5px 0;
     background-color: rgb(106, 105, 122);
     color: rgb(201, 198, 11);
-    box-shadow: 0 0 10px 5px grey;
+    box-shadow: 0 0 10px 5px rgb(134, 82, 82);
 }
 p {
     margin: 0;
@@ -29,7 +29,7 @@ img {
     border: 2px solid grey;
     padding: 1em;
     margin: 1em;
-    box-shadow: 0 0 10px 5px grey;
+    box-shadow: 0 0 10px 5px rgb(134, 82, 82);
 }
 footer {
     margin: 1em;
