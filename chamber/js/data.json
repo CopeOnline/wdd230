@@ -18,6 +18,7 @@
     { "name":"NAPA Auto Parts", "address":"113 S Rail St W", "city":"Shoshone, ID 83352", "phone":"2088867034", "website":"http://www.napaonline.com", "membership":"", "logo":"" },
     { "name":"Ross Lumber Company", "address":"391 N Highway 75", "city":"Shoshone, ID 83352", "phone":"2088867778", "website":"http://www.rosslumber.com", "membership":"", "logo":"" },
     { "name":"Sawtooth Food Town", "address":"904 S Greenwood St", "city":"Shoshone, ID 83352", "phone":"2088867671", "website":"", "membership":"", "logo":"" },
+    { "name":"Rocky Mountain Hardware", "address":"1020 Airport Way", "city":"Hailey, ID 83333", "phone":"8887882013", "website":"http://www.rockymountainhardware.com/", "membership":"", "logo":"" },
     { "name":"Shoshone Family Medical Center", "address":"113 S Apple St", "city":"Shoshone, ID 83352", "phone":"8883795788", "website":"http://www.shoshone-family-medical-center.com", "membership":"", "logo":"" },
     { "name":"Warnke Custom Homes", "address":"304 Riverview Dr", "city":"Shoshone, ID 83352", "phone":"2088862150", "website":"http://www.warnkecustomhomes.com", "membership":"", "logo":"" }
   ]}
