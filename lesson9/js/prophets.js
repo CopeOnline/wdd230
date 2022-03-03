@@ -37,7 +37,6 @@ function displayProphets(prophet) {  // Create elements to add to the document
     birthPlace.textContent = `Place of Birth: ${prophet.birthplace}`;
     image.setAttribute('src', prophet.imageurl);
     let order = setOrderSuffix(prophet.order);
-    console.log(order);
     image.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname} - ${order} Latter-day President`);
     image.setAttribute('loading', 'lazy');
     // Add/append the section(card) with the h2 element
