@@ -1,9 +1,9 @@
 
-const requestURL = 'js/data.json';
+const requestFile = 'js/data.json';
 let value = false
 let website = ''
 
-fetch(requestURL)
+fetch(requestFile)
   .then(function (response) {
     return response.json();
   })
