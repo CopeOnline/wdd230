@@ -444,3 +444,6 @@ form input.submitBtn{
 aside {
     display: none;
 }
+.dir section img {
+    max-width: 65px;
+}
