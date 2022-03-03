@@ -20,11 +20,11 @@ function displayCompanyWebsite(listing, value) {
         if (property == "website") {
             value = true
             website = document.createElement('p');
-            website.textContent = `${listing.website}`;
-            return {website, value}
+            website.innerHTML = `<a href="${listing.website}">Website</a>`;
+            return {website, value};
             }   
-    console.log(value)
-    }
+    };
+    return {website, value};
 }
 
 
@@ -47,15 +47,10 @@ function displaydirectory(listing) {  // Create elements to add to the document
     card.appendChild(address);
     card.appendChild(phone);
 
-    console.log(value)
-
-    if (value = true) {
+    if (website.value == true) {
         card.appendChild(website.website);
     }
 
-    console.log(website.website)
-    
-    
     // Add/append the existing HTML div with the cards class with the section(card)
     document.querySelector('div.directory').appendChild(card);
   }

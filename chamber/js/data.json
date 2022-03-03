@@ -1,5 +1,5 @@
 {"directory":[
-    { "name":"Shoshone Snack Bar", "address":"412 S Greenwood St Shoshone, ID 83352", "phone":"2088862294", "website":"https://www.facebook.com/people/Shoshone-Snack-Bar/100063619057627/", "membership":"", "logo":"" },
+    { "name":"Shoshone Snack Bar", "address":"412 S Greenwood St Shoshone, ID 83352", "phone":"2088862294", "website":"https://www.facebook.com/people/Shoshone-Snack-Bar/100063619057627", "membership":"", "logo":"" },
     { "name":"Alpine Mini Storage", "address":"135 S Rail St W Shoshone, ID 83352", "phone":"2088862127", "membership":"", "logo":"" },
     { "name":"Bear Claw Trading Post", "address":"1560 N Highway 75 Shoshone, ID 83352", "phone":"2088867123", "website":"http://www.bearclawtrading.com", "membership":"", "logo":"" },
     { "name":"Big M Trucking", "address":"510 N Dorothy St Shoshone, ID 83352", "phone":"2088867065", "membership":"", "logo":"" },
@@ -12,8 +12,8 @@
     { "name":"Eedaho Real Estate", "address":"115 S Rail St W Shoshone, ID 83352", "phone":"2085952072", "membership":"", "logo":"" },
     { "name":"Big Wood Canal Company", "address":"409 N Apple St Shoshone, ID 83352", "phone":"2088862331", "website":"https://www.bwccafrd2.com/", "membership":"", "logo":"" },
     { "name":"Fini Machinery Inc", "address":"410 N 120 E Shoshone, ID 83352", "phone":"2088867950", "membership":"", "logo":"" },
-    { "name":"G & H Ace Hardware", "address":"106 S Rail St E Shoshone, ID 83352", "phone":"2088867112", "website":"http://www.acehardware.com/mystore/index.jsp", "membership":"", "logo":"" },
-    { "name":"Manhattan Cafe", "address":"133 S Rail St W Shoshone, ID 83352", "phone":"2088862142", "website":"http://www.showshown.com/manhattan-cafe/", "membership":"", "logo":"" },
+    { "name":"G & H Ace Hardware", "address":"106 S Rail St E Shoshone, ID 83352", "phone":"2088867112", "website":"http://www.acehardware.com/mystore", "membership":"", "logo":"" },
+    { "name":"Manhattan Cafe", "address":"133 S Rail St W Shoshone, ID 83352", "phone":"2088862142", "website":"http://www.showshown.com/manhattan-cafe", "membership":"", "logo":"" },
     { "name":"Mountain View Lanes", "address":"608 N Greenwood St Shoshone, ID 83352", "phone":"2088862020", "membership":"", "logo":"" },
     { "name":"NAPA Auto Parts", "address":"113 S Rail St W Shoshone, ID 83352", "phone":"2088867034", "website":"http://www.napaonline.com", "membership":"", "logo":"" },
     { "name":"Ross Lumber Company", "address":"391 N Highway 75 Shoshone, ID 83352", "phone":"2088867778", "website":"http://www.rosslumber.com", "membership":"", "logo":"" },
