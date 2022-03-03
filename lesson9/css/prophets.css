@@ -1,14 +1,15 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 
 body {
     margin: 0 auto;
-    align-items: center;
     display: flex;
     flex-direction: column;
+    font-family: Ubuntu, Georgia, sans-serif;
 }
 h1 {
     color: rgb(197, 17, 11);
     margin-bottom: 0;
+    text-align: center;
 }
 section {
     border: 2px solid gray;
@@ -40,22 +41,3 @@ div.cards {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
-/* @media only screen and (min-width: 37.5em) {
-
-    .cards {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 5px;
-    }
-    section {
-        margin: 0;
-    }
-}
-
-@media only screen and (min-width: 60em) {
-
-    .cards {
-        grid-template-columns: repeat(4, 1fr);
-    }
-    
-} */
