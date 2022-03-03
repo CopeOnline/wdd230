@@ -25,6 +25,8 @@ function displayProphets(prophet) {  // Create elements to add to the document
     birthDate.textContent = `Date of Birth: ${prophet.birthdate}`;
     birthPlace.textContent = `Place of Birth: ${prophet.birthplace}`;
     image.setAttribute('src', prophet.imageurl);
+    image.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`);
+    image.setAttribute('loading', 'lazy');
     // Add/append the section(card) with the h2 element
     card.appendChild(h2);
     card.appendChild(birthDate);

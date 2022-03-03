@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Greater Shoshone Chamber of Commerce site">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="../css/normalize.css"/>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo&family=Merriweather+Sans&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">
+    <title>Discover the GS Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img class="headerLogo" src="images/gscoc_logo_small.webp" alt="chamber logo" width="50"></a>
+            <div class="companyName">
+                <p>Greater Shoshone</p>
+                <p class="lineTwo">Chamber of Commerce</p>
+            </div>      
+            <div class="social">
+                <a href="http://www.facebook.com"><img class="facebook" src="images/facebook_icon.webp" alt="facebook icon" width="24" height="24"></a>
+                <a href="http://www.linkedin.com"><img class="linkdin" src="images/linkedin_icon.webp" alt="linkedin icon" width="24" height="24"></a>
+            </div>
+            <button id="hamBtn"><span>&#9776;</span><span class="close">X</span></button>
+            <ul id="menu">
+                <li><a class="homebtn" href="index.html">Home</a></li>
+                <li><a class="dscrbtn" href="discover.html">Discover</a></li>
+                <li><a class="dirbtn" href="#">Directory</a></li>
+                <li><a class="jnbtn" href="join.html">Join</a></li>
+                <li><a class="ctbtn" href="#">Contact</a></li>
+            </ul> 
+        </nav>
+        <p class="todaysDate">todays date</p>
+    </header>
+    <main class="dir">
+        <h1>Business Directory</h1>
+        <fieldset>
+            <legend>Viewing Options</legend>
+            <label class="layout"><input type="image" name="grid" src="images/grid.png" /></label>
+            <label class="layout"><input type="image" name="grid" src="images/list.png" /></label> 
+        </fieldset>
+        <div class="directory"></div>
+    </main>
+    <footer>
+        <div class="chamberInfo">
+            <img class="footerLogo" src="images/gscoc_logo_small.webp" alt="chamber logo" width="109" height="122">
+            <p class="compName">Greater Shoshone Chamber of Commerce</p>
+            <p class="address">2508 North Rail Street <br> Shoshone, Idaho 83334</p>
+            <p class="cntctInfo">info@gschamber.com <br> +(208) 8867-5309</p>
+            <a class="location" href=https://goo.gl/maps/8AZJB2DzwRmwqk3x5>📍 Location Map</a>
+        </div>
+        <hr style="width:90%;text-align:center;">
+        <div class="authoredInfo">
+            <p> <span class="currentyear"></span> </p>
+            <p> <span class="break"> | </span> </p>
+            <p> <span class="name"> Larry E. Copeland Jr </span></p>
+            <p><span class="break1"> | </span></p>
+            <p>WDD 230 Project</p>
+            <p><span class="break2"> | </span></p>
+            <div> 
+                <p><span class="lastupdated"></span></p>
+            </div>
+        </div>      
+    </footer>
+    <script src="js/responsive.js"></script>
+    <script src="js/directory.js"></script>
+</body>
+</html>
