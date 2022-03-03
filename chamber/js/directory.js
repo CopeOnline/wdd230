@@ -31,19 +31,19 @@ function displayCompanyWebsite(listing, value) {
 function displaydirectory(listing) {  // Create elements to add to the document
     let card = document.createElement('section');
     let image = document.createElement('img');
-    let h2 = document.createElement('h2');
+    let h3 = document.createElement('h3');
     let address = document.createElement('p');
     let phone = document.createElement('p');
     let website = displayCompanyWebsite(listing, value)
     
       // Change the textContent property of the h2 element to contain the listing's full name
-    h2.textContent = `${listing.name}`;
+    h3.textContent = `${listing.name}`;
     address.textContent = `${listing.address}`;
     phone.textContent = `${listing.phone}`;
     image.setAttribute('src', listing.logo);
     // Add/append the section(card) with the h2 element
     card.appendChild(image);
-    card.appendChild(h2);
+    card.appendChild(h3);
     card.appendChild(address);
     card.appendChild(phone);
 
