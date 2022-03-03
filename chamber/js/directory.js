@@ -15,6 +15,8 @@ fetch(requestFile)
   });
 
 
+
+
 function displayCompanyWebsite(listing, value) {
     for  (const property in listing) {
         if (property == "website") {
