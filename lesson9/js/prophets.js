@@ -12,7 +12,18 @@ fetch(requestURL)
     prophets.forEach(displayProphets);
   });
 
-
+function setOrderSuffix(order) {
+    if (order === 1) {
+      order = `${order}st`
+    }else if (order === 2) {
+      order = `${order}nd`
+    }else if (order === 3) {
+      order = `${order}rd`
+    }else {
+      order = `${order}th`
+    };
+  return order;  
+}
 
 function displayProphets(prophet) {  // Create elements to add to the document
     let card = document.createElement('section');
@@ -25,7 +36,9 @@ function displayProphets(prophet) {  // Create elements to add to the document
     birthDate.textContent = `Date of Birth: ${prophet.birthdate}`;
     birthPlace.textContent = `Place of Birth: ${prophet.birthplace}`;
     image.setAttribute('src', prophet.imageurl);
-    image.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`);
+    let order = setOrderSuffix(prophet.order);
+    console.log(order);
+    image.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname} - ${order} Latter-day President`);
     image.setAttribute('loading', 'lazy');
     // Add/append the section(card) with the h2 element
     card.appendChild(h2);
