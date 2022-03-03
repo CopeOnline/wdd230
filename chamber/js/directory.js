@@ -1,5 +1,5 @@
 
-const requestFile = 'js/data.json';
+const requestFile = 'json/data.json';
 let value = false
 let website = ''
 
