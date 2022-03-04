@@ -475,3 +475,7 @@ section p {
     margin: 0;
     padding: 0;
 }
+.dir h1 {
+    color: #006989;
+    margin-left: .5em;
+}
