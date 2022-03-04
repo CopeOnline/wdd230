@@ -454,14 +454,10 @@ div.viewBtns {
     width: 96px;
     border-radius: .5em;
 }
-.dir section img {
+.dir section.grid img {
     max-width: 96px;
 }
-.dir div.directory {
-    margin: 0 auto;
-    text-align: center;
-}
- section {
+section.grid {
     border: solid 2px grey;
     border-radius: 6px;
     margin: 1em auto;
@@ -473,11 +469,14 @@ div.viewBtns {
     align-self: center;
     justify-self: center;
 }  
-section p {
+section.grid p {
     margin: 0;
     padding: 0;
 }
 .dir h1 {
     color: #006989;
     margin-left: .5em;
+}
+.dir section.list img {
+    display: none;
 }
