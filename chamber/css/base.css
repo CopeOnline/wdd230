@@ -227,7 +227,7 @@ nav div.social{
 nav div.social img {
     padding: .4em;
 }
-header p.todaysDate {
+.todaysDate {
     align-items: center;
     text-align: center;
     border: 2px solid rgb(88, 83, 83);
@@ -449,17 +449,29 @@ div.viewBtns {
     justify-content : space-around;
 }
 .dir input {
-    border: 5px solid #6B4B3E;
+    border: 5px solid #006989;
     margin: 0 1em;
     width: 96px;
 }
 .dir section img {
-    max-width: 65px;
+    max-width: 96px;
 }
-section {
+.dir div.directory {
+    margin: 0 auto;
+    text-align: center;
+}
+ section {
     border: solid 2px grey;
-    margin: 1em 0;
+    margin: 1em auto;
     text-align: center;
     padding: .75em 0;
-    box-shadow: 5px 5px 5px #6B4B3E;
+    box-shadow: 5px 5px 5px #006989;
+    width: 350px;
+    height: 200px;
+    align-self: center;
+    justify-self: center;
+}  
+section p {
+    margin: 0;
+    padding: 0;
 }
