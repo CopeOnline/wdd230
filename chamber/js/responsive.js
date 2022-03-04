@@ -30,17 +30,19 @@ function hiddenDate() {
     document.getElementById("todayDate").value = tempDate;
 }
 
+let view
+
 function gridView() {
-    let listView = document.getElementsByTagName('section');
-    for (let i=0; i < listView.length; i++) {
-        listView[i].className = listView[i].className.replace("list", "grid");
+    view = document.getElementsByTagName('section');
+    for (let i=0; i < view.length; i++) {
+        view[i].className = view[i].className.replace("list", "grid");
         }
     }
     
 function listView() {
-    let listView = document.getElementsByTagName('section');    
-    for (let i=0; i < listView.length; i++) {
-        listView[i].className = listView[i].className.replace("grid", "list");
+    view = document.getElementsByTagName('section');    
+    for (let i=0; i < view.length; i++) {
+        view[i].className = view[i].className.replace("grid", "list");
         }
     }
 
