@@ -32,6 +32,7 @@ function displayCompanyWebsite(listing, value) {
 
 function displaydirectory(listing) {  // Create elements to add to the document
     let card = document.createElement('section');
+    card.setAttribute('class', 'list')
     let image = document.createElement('img');
     let h3 = document.createElement('h3');
     let address = document.createElement('p');

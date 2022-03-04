@@ -29,3 +29,23 @@ function hiddenDate() {
     let tempDate = `${d.getDate()} ${monthName} ${year}, ${currentTime}`
     document.getElementById("todayDate").value = tempDate;
 }
+
+function gridView() {
+    let listView = document.getElementsByTagName('section');
+    for (let i=0; i < listView.length; i++) {
+        listView[i].className = listView[i].className.replace("list", "grid");
+        }
+    }
+    
+function listView() {
+    let listView = document.getElementsByTagName('section');    
+    for (let i=0; i < listView.length; i++) {
+        listView[i].className = listView[i].className.replace("grid", "list");
+        }
+    }
+
+const gridBtn = document.getElementById("grid");
+gridBtn.onclick = gridView;
+
+const listBtn = document.getElementById("list");
+listBtn.onclick = listView;
