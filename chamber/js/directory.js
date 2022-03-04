@@ -10,7 +10,7 @@ fetch(requestFile)
   .then(function (jsonObject) { 
     
     const directory = jsonObject['directory'];
-    console.log(directory)
+  
     directory.forEach(displaydirectory);
   });
 

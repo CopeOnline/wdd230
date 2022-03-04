@@ -444,6 +444,22 @@ form input.submitBtn{
 aside {
     display: none;
 }
+div.viewBtns {
+    display: flex;
+    justify-content : space-around;
+}
+.dir input {
+    border: 5px solid #6B4B3E;
+    margin: 0 1em;
+    width: 96px;
+}
 .dir section img {
     max-width: 65px;
+}
+section {
+    border: solid 2px grey;
+    margin: 1em 0;
+    text-align: center;
+    padding: .75em 0;
+    box-shadow: 5px 5px 5px #6B4B3E;
 }
