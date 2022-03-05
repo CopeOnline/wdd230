@@ -52,6 +52,7 @@ main div.spotOne img, div.spotTwo img, div.spotThree img {
 }
 main div.spotOne p.alternate, div.spotTwo p.alternate, div.spotThree p.alternate {
     color: #6B4B3E;
+    font-size: 1em;
 }
 .joinUs, .placeholder div.spotThree {
     display: none;
