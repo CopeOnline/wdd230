@@ -454,10 +454,10 @@ div.viewBtns {
     width: 48px;
     border-radius: .5em;
 }
-.dir section.grid img {
+.dir div.grid section img {
     max-width: 96px;
 }
-section.grid {
+.dir div.grid section {
     border: solid 2px grey;
     border-radius: 6px;
     margin: 1em auto;
@@ -465,11 +465,10 @@ section.grid {
     padding: .75em 0;
     box-shadow: 5px 5px 5px #006989;
     width: 350px;
-    height: 200px;
     align-self: center;
     justify-self: center;
 }  
-section.grid p {
+div.grid section p {
     margin: 0;
     padding: 0;
 }
@@ -477,21 +476,21 @@ section.grid p {
     color: #006989;
     margin-left: .5em;
 }
-.dir section.list img {
+.dir div.list section img {
     display: none;
 }
-.dir section {
+.dir div section {
     margin: 1em 0;
 }
-.dir div.directory > section.list:nth-child(odd) {
+.dir div.directory div.list section:nth-child(odd) {
     background-color: rgb(194, 219, 235);
 }
 
-.dir section.list h3, .dir section.list p, .dir section.list a {
+.dir div.list h3, .dir div.list p, .dir div.list a {
     margin: 0 1em;
     padding: 3px 0;
 }
-.dir section.list {
+.dir div.list section {
     padding-top: 15px;
     padding-bottom: 15px;
 }

@@ -273,5 +273,13 @@
         grid-row: 1/2;
         margin-top: 7rem;
     }
+    .dir div.directory section.list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 1fr);
+    }
+    .dir section.list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 1fr);
+    }
 
 }   

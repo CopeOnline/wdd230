@@ -10,7 +10,9 @@ fetch(requestFile)
   .then(function (jsonObject) { 
     
     const directory = jsonObject['directory'];
-  
+    
+    prepareDirectory()
+    
     directory.forEach(displaydirectory);
   });
 
@@ -30,10 +32,15 @@ function displayCompanyWebsite(listing, value) {
     return {website, value};
 }
 
+function prepareDirectory(){
+  let container = document.createElement('div');
+  container.setAttribute('class', 'list')
+  document.querySelector('div.directory').appendChild(container);
+
+}
 
 function displaydirectory(listing) {  // Create elements to add to the document
     let card = document.createElement('section');
-    card.setAttribute('class', 'list')
     let image = document.createElement('img');
     let h3 = document.createElement('h3');
     let address = document.createElement('p');
@@ -56,6 +63,6 @@ function displaydirectory(listing) {  // Create elements to add to the document
     }
 
     // Add/append the existing HTML div with the cards class with the section(card)
-    document.querySelector('div.directory').appendChild(card);
+    document.querySelector('div.list').appendChild(card);
   }
 

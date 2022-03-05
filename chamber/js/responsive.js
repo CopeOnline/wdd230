@@ -33,14 +33,14 @@ function hiddenDate() {
 let view
 
 function gridView() {
-    view = document.getElementsByTagName('section');
+    view = document.getElementsByTagName('div');
     for (let i=0; i < view.length; i++) {
         view[i].className = view[i].className.replace("list", "grid");
-        }
+        }    
     }
     
 function listView() {
-    view = document.getElementsByTagName('section');    
+    view = document.getElementsByTagName('div');    
     for (let i=0; i < view.length; i++) {
         view[i].className = view[i].className.replace("grid", "list");
         }
