@@ -275,7 +275,7 @@
     }
     .dir div.directory div.list {
         display: grid;
-        grid-template-columns: repeat(auto, 1fr);
+        grid-template-columns: repeat(auto-fit, 1fr);
         margin: 1em 0;
     }
     .dir div.directory div.list section {

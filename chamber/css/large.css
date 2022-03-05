@@ -193,5 +193,8 @@ form label.info textarea {
 .dir div.directory div.grid {
     grid-template-columns: 1fr .5fr 1fr;
 }
+.dir h1 {
+    margin: 0 13rem;
+}
 
 }
