@@ -5,11 +5,14 @@ let directory
 
 
 function getRandomInt(max) {
-    let intOne = Math.floor(Math.random() * max);
-    let intTwo = Math.floor(Math.random() * max);
-    let intThree = Math.floor(Math.random() * max);
-
-    return {intOne, intTwo, intThree}
+    let int = []
+    for (let i = 0; i < 3; i++) {
+        ts = Math.floor(Math.random() * max);
+        int.push(ts)
+        console.log(ts)
+    }
+    console.log(int)
+    return int
   }
 
 function fetchData (directory){
@@ -47,10 +50,16 @@ return {website, value};
 }
 
 function displaydirectory(listing, int) {
-    
+    let spotOne = listing[int[0]]
+    let spotTwo = listing[int[1]]
+    let spotThree = listing[int[2]]
+
     let website = displayCompanyWebsite(listing, value)
     console.log(listing)
-    console.log(int)
+    console.log(int[0])
+    console.log(spotOne)
+    console.log(spotTwo)
+    console.log(spotThree)
   }
 
 function memberStatus(dir){
