@@ -84,6 +84,7 @@ function displaySpotlight(listing, int, label) {
 
         }else {
             alternate = document.createElement('p');
+            alternate.setAttribute('class', 'alternate')
             alternate.innerHTML = `<em>Come in and see us!</em>`;
             container.appendChild(alternate);
         }

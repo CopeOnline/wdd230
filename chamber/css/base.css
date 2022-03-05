@@ -50,6 +50,9 @@ main div.spotOne a, div.spotTwo a, div.spotThree a {
 main div.spotOne img, div.spotTwo img, div.spotThree img {
     max-width: 48px;
 }
+main div.spotOne p.alternate, div.spotTwo p.alternate, div.spotThree p.alternate {
+    color: #6B4B3E;
+}
 .joinUs, .placeholder div.spotThree {
     display: none;
 }
@@ -505,4 +508,5 @@ div.grid section a {
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
 
