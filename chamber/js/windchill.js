@@ -26,7 +26,6 @@ const fillData = async () => {
 
     let currentspeed = Math.round(speed)
     wSpeed.textContent = `${currentspeed} mph`
-    console.log(data)
     return newTemp, speed
     }
 
