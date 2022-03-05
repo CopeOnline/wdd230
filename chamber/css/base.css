@@ -509,5 +509,16 @@ div.grid section a {
     padding-top: 15px;
     padding-bottom: 15px;
 }
-
+.wireframes {
+    background-color: #EAEBED;
+}
+.wireframes img {
+    min-width: 96%;
+    max-width: 96%;
+    border: 5px solid grey;
+    margin: .5em 0;
+}
+.wireframes a {
+    font-size: 2em;
+}
 
