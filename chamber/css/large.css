@@ -183,5 +183,15 @@ form label.level {
 form label.info textarea {
     margin-bottom: 0;
 }
+.dir div.directory div.list {
+    max-width: 1000px;
+    margin: 1em auto;
+}
+.dir div.directory div.list section {
+    font-size: 1.2em;
+}
+.dir div.directory div.grid {
+    grid-template-columns: 1fr .5fr 1fr;
+}
 
 }
