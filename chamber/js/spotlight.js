@@ -91,7 +91,7 @@ function displaySpotlight(listing, int, label) {
   }
 
 function memberStatus(dir){
-    return dir["membership"] == "gold" || dir["membership"] == "silver"
+    return dir["membership"] == "gold"
 
 }
 
