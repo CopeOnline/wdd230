@@ -26,7 +26,7 @@ main div.placeholder {
     border: 2px solid gray;
     padding: 1rem;
     margin-bottom: 15px;
-    background-color: #6B4B3E;
+    background-color: #006989;
     margin-top: 1em;
 }
 main div.placeholder div {
@@ -37,14 +37,14 @@ main div.placeholder div {
 main div.spotTwo, div.spotOne, div.spotThree {
     margin: 0;
     text-align: center;
-    color: #EAEBED;
-    background-color:  #006989;
+    color: #006989;
+    background-color:  #EAEBED;
 }
 main div.spotOne h2, div.spotTwo h2, div.spotThree h2 {
-    color: #EAEBED;
+    color: #006989;
 }
 main div.spotOne a, div.spotTwo a, div.spotThree a {
-    color: #EAEBED;
+    color: #006989;
     text-decoration: none;
 }
 main div.spotOne img, div.spotTwo img, div.spotThree img {
