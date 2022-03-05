@@ -30,6 +30,6 @@ return {website, value};
 
 
 
-  function displaydirectory(listing) { 
+function displaydirectory(listing) { 
     console.log('working')
   }
