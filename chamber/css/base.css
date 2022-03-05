@@ -471,7 +471,12 @@ div.viewBtns {
 }  
 div.grid section p {
     margin: 0;
-    padding: 0;
+    padding: 2px;
+}
+div.grid section a {
+    margin: 0;
+    padding: 2px;
+    font-size: 1.2em;
 }
 .dir h1 {
     margin-left: .5em;
