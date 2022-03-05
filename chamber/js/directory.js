@@ -14,6 +14,7 @@ fetch(requestFile)
     prepareDirectory()
     
     directory.forEach(displaydirectory);
+
   });
 
 

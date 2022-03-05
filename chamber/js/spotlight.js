@@ -1,35 +1,60 @@
 const requestFile = 'json/data.json';
 let value = false
 let website = ''
+let directory
 
-fetch(requestFile)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) { 
+
+function getRandomInt(max) {
+    let intOne = Math.floor(Math.random() * max);
+    let intTwo = Math.floor(Math.random() * max);
+    let intThree = Math.floor(Math.random() * max);
+
+    return {intOne, intTwo, intThree}
+  }
+
+function fetchData (directory){
+    fetch(requestFile)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (jsonObject) { 
     
-    const directory = jsonObject['directory'];
-    
-    directory.forEach(displaydirectory);
+    directory = jsonObject['directory'];
+
+    getSpotlightMembers(directory)
   });
+}
+function getSpotlightMembers(directory){
+    const newDir = directory.filter(memberStatus);
 
+    const int = getRandomInt(newDir.length)    
+    console.log(int)
+    displaydirectory(newDir, int);
+}
 
 function displayCompanyWebsite(listing, value) {
-for  (const property in listing) {
-    if (property == "website") {
-        value = true
-        website = document.createElement('a');
-        website.setAttribute('href', `${listing.website}`)
-        website.textContent = 'Website';
-        return {website, value};
+    for  (const property in listing) {
+        if (property == "website") {
+            value = true
+            website = document.createElement('a');
+            website.setAttribute('href', `${listing.website}`)
+            website.textContent = 'Website';
+            return {website, value};
         }   
     };
 return {website, value};
 }
 
-
-
-
-function displaydirectory(listing) { 
-    console.log('working')
+function displaydirectory(listing, int) {
+    
+    let website = displayCompanyWebsite(listing, value)
+    console.log(listing)
   }
+
+function memberStatus(dir){
+    return dir["membership"] == "gold" || dir["membership"] == "silver"
+
+}
+
+fetchData()
+

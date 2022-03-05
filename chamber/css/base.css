@@ -43,7 +43,10 @@ main div.spotTwo, div.spotOne, div.spotThree {
 main div.spotOne h2, div.spotTwo h2, div.spotThree h2 {
     color: #EAEBED;
 }
-
+main div.spotOne a, div.spotTwo a, div.spotThree a {
+    color: #EAEBED;
+    text-decoration: none;
+}
 .joinUs, .placeholder div.spotThree {
     display: none;
 }
