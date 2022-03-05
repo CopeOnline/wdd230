@@ -276,15 +276,19 @@
     .dir div.directory div.list {
         display: grid;
         grid-template-columns: repeat(auto, 1fr);
+        margin: 1em 0;
     }
     .dir div.directory div.list section {
         display: grid;
         grid-template-columns: 2.5fr 3fr 1fr 1fr;
+        margin: 0;
     }
     .dir div.directory div.list p {
         padding: 0;
         margin: 0 auto;
-        
+    }
+    .dir div.directory div.list h3 {
+        font-size: 1em;
     }
     .dir div.grid {
         display: grid;
