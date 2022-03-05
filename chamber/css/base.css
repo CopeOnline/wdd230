@@ -47,6 +47,9 @@ main div.spotOne a, div.spotTwo a, div.spotThree a {
     color: #EAEBED;
     text-decoration: none;
 }
+main div.spotOne img, div.spotTwo img, div.spotThree img {
+    max-width: 48px;
+}
 .joinUs, .placeholder div.spotThree {
     display: none;
 }
