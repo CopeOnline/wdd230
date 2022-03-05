@@ -446,12 +446,12 @@ aside {
 }
 div.viewBtns {
     display: flex;
-    justify-content : space-around;
+    justify-content : center;
 }
 .dir input {
     border: 5px solid #006989;
     margin: 0 1em;
-    width: 96px;
+    width: 48px;
     border-radius: .5em;
 }
 .dir section.grid img {
@@ -480,3 +480,19 @@ section.grid p {
 .dir section.list img {
     display: none;
 }
+.dir section {
+    margin: 1em 0;
+}
+.dir div.directory > section.list:nth-child(odd) {
+    background-color: rgb(194, 219, 235);
+}
+
+.dir section.list h3, .dir section.list p, .dir section.list a {
+    margin: 0 1em;
+    padding: 3px 0;
+}
+.dir section.list {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+

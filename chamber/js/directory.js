@@ -21,8 +21,9 @@ function displayCompanyWebsite(listing, value) {
     for  (const property in listing) {
         if (property == "website") {
             value = true
-            website = document.createElement('p');
-            website.innerHTML = `<a href="${listing.website}">Website</a>`;
+            website = document.createElement('a');
+            website.setAttribute('href', `${listing.website}`)
+            website.textContent = 'Website';
             return {website, value};
             }   
     };
