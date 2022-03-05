@@ -273,13 +273,22 @@
         grid-row: 1/2;
         margin-top: 7rem;
     }
-    .dir div.directory section.list {
+    .dir div.directory div.list {
         display: grid;
-        grid-template-columns: repeat(auto-fit, 1fr);
+        grid-template-columns: repeat(auto, 1fr);
     }
-    .dir section.list {
+    .dir div.directory div.list section {
         display: grid;
-        grid-template-columns: repeat(auto-fit, 1fr);
+        grid-template-columns: 2.5fr 3fr 1fr 1fr;
+    }
+    .dir div.directory div.list p {
+        padding: 0;
+        margin: 0 auto;
+        
+    }
+    .dir div.grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }   
