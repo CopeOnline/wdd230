@@ -53,6 +53,7 @@ function displaydirectory(listing) {  // Create elements to add to the document
     address.textContent = `${listing.address}`;
     phone.textContent = `${listing.phone}`;
     image.setAttribute('src', listing.logo);
+    image.setAttribute('alt', `${listing.name} logo`);
     // Add/append the section(card) with the h2 element
     card.appendChild(image);
     card.appendChild(h3);
