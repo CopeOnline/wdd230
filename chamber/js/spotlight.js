@@ -24,11 +24,12 @@ function fetchData (directory){
     getSpotlightMembers(directory)
   });
 }
+
 function getSpotlightMembers(directory){
     const newDir = directory.filter(memberStatus);
 
     const int = getRandomInt(newDir.length)    
-    console.log(int)
+    
     displaydirectory(newDir, int);
 }
 
@@ -49,6 +50,7 @@ function displaydirectory(listing, int) {
     
     let website = displayCompanyWebsite(listing, value)
     console.log(listing)
+    console.log(int)
   }
 
 function memberStatus(dir){
