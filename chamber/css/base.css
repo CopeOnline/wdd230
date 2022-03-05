@@ -45,7 +45,6 @@ main div.spotOne h2, div.spotTwo h2, div.spotThree h2 {
 }
 main div.spotOne a, div.spotTwo a, div.spotThree a {
     color: #6B4B3E;
-    text-decoration: none;
 }
 main div.spotOne img, div.spotTwo img, div.spotThree img {
     max-width: 48px;
