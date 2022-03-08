@@ -34,9 +34,9 @@ function displayCompanyWebsite(listing, value) {
 }
 
 function prepareDirectory(){
-  let container = document.createElement('div');
-  container.setAttribute('class', 'list')
-  document.querySelector('div.directory').appendChild(container);
+    let container = document.createElement('div');
+    container.setAttribute('class', 'list')
+    document.querySelector('div.directory').appendChild(container);
 
 }
 
@@ -68,24 +68,24 @@ function displaydirectory(listing) {  // Create elements to add to the document
     document.querySelector('div.list').appendChild(card);
   }
 
-  let view
+let view
 
-  function gridView() {
-      view = document.getElementsByTagName('div');
-      for (let i=0; i < view.length; i++) {
-          view[i].className = view[i].className.replace("list", "grid");
+function gridView() {
+    view = document.getElementsByTagName('div');
+    for (let i=0; i < view.length; i++) {
+        view[i].className = view[i].className.replace("list", "grid");
           }    
       }
       
-  function listView() {
-      view = document.getElementsByTagName('div');    
-      for (let i=0; i < view.length; i++) {
-          view[i].className = view[i].className.replace("grid", "list");
+function listView() {
+    view = document.getElementsByTagName('div');    
+    for (let i=0; i < view.length; i++) {
+        view[i].className = view[i].className.replace("grid", "list");
           }
       }
   
-  const gridBtn = document.getElementById("grid");
-  gridBtn.onclick = gridView;
+const gridBtn = document.getElementById("grid");
+gridBtn.onclick = gridView;
   
-  const listBtn = document.getElementById("list");
-  listBtn.onclick = listView;
+const listBtn = document.getElementById("list");
+listBtn.onclick = listView;
