@@ -199,6 +199,9 @@ form label.info textarea {
 .dir h1 {
     margin: 0 19.5rem;
 }
+main.thanks {
+    margin: 7em auto;
+}
 .wireframes img {
     min-width: 0;
 }
