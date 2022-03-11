@@ -291,5 +291,8 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-
+    .attr {
+        grid-column: 3/4;
+        width: fit-content;
+    }
 }   
