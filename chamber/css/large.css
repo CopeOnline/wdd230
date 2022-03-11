@@ -148,9 +148,14 @@ footer div.chamberInfo img.footerLogo {
    grid-row: 1/4;
    justify-self: end;
 }
-footer div.authoredInfo div, footer div.authoredInfo div p{
+footer div.authoredInfo div {
     display: inline;
     margin: 0;
+    padding: 0;
+    text-align: start;
+}
+footer div p span.lastupdated {
+    margin: 1em auto;
     padding: 0;
     text-align: start;
 }
