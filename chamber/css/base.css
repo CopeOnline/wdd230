@@ -264,6 +264,7 @@ ul.open {
 ul li a:hover, footer a:hover {
     background-color:#FE654F;
     color:  #dff51d;
+    border-radius: 5em;
 }
 footer {
     background-color: #006989;
@@ -567,6 +568,10 @@ input:focus, textarea:focus, select:focus{
     display: grid;
     grid-template-columns: 5em 1fr;
 }
+.contact fieldset {
+    padding: 10px;
+}
 .contact input.submitBtn {
-
+    width: 94%;
+    margin: 0 10px 10px 10px;
 }

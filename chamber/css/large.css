@@ -223,5 +223,14 @@ main.thanks {
 .wireframes img.grid, .wireframes img.list {
     grid-column: 2/4;
 }
+.contact form {
+    border: 5px solid #6B4B3E;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 5em #6B4B3E;
+}
+.contact {
+    margin: 5em ;
+}
 
 }
