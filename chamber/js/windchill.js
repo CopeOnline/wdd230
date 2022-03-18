@@ -35,7 +35,7 @@ const getIconDesc = async () => {
     let desc = data['weather'][0]['description'];
 
     weatherIcon.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
-    weatherIcon.alt = `open weather map API icon: ${desc}`;
+    weatherIcon.alt = `openweathermap.com API icon: ${desc}`;
     iconDesc.textContent = desc.toUpperCase()
 } 
 
