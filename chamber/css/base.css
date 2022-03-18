@@ -575,3 +575,6 @@ input:focus, textarea:focus, select:focus{
     width: 94%;
     margin: 0 10px 10px 10px;
 }
+.hours {
+    grid-column: 1/3;
+}
