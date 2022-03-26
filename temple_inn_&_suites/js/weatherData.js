@@ -93,16 +93,35 @@ const imgDetails = () => {
 const getAlerts = async () => {
     await getForecast();
 
-    if (JSON.stringify(data).includes("alerts")) {
-        console.log("yes")
-        console.log(data)
+    if (JSON.stringify(data).includes("alerts")) 
+    {
+        let container = document.createElement('div');
+        container.setAttribute('class', 'danger')
+        document.querySelector('div.alerts').appendChild(container);
+
+        let close = document.createElement('BUTTON');
+        close.setAttribute('class', 'closeAlert');
+        
+        let dayTemp = document.createElement('p');
+
+        day.textContent = `${dayName}`;
+        dayTemp.innerHTML = `${Math.round(data.daily[num].temp.day)}&#176;F `;
+
+        let forecastIcon = data.daily[num].weather[0].icon;
+        let forecastText = data.daily[num].weather.desc;
+        forecastImg = imgDetails(forecastIcon, forecastText)
+
+        image.setAttribute('src', forecastImg[0]);
+        image.setAttribute('alt', forecastImg[1]);
+
+        container.appendChild(day);
+        container.appendChild(image);
+        container.appendChild(dayTemp);
     }else {
     console.log("no")
     console.log(data)
 }
 }
-
-
 
   
 window.addEventListener('load', getAlerts());
