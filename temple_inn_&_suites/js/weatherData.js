@@ -12,7 +12,6 @@ let data, newTemp, weekday = [], icon, desc;
 async function getWeather() {
     const response = await fetch(requestFile);
     data = await response.json()
-    console.log(data)
     return data
 
 }    
@@ -78,8 +77,6 @@ const getDay = () => {
         const forecastOptions = {weekday: 'long'}
         let forecastDay = dateObject.toLocaleString('en-US', forecastOptions)
         weekday.push(forecastDay)
-
-        const alertOptions = {weekday: 'long', month: "long", day: "numeric", year: "numeric", hour: "numeric", minute: "numeric", second: "numeric", timeZoneName: "short" }
     }
     return weekday
 }
@@ -104,10 +101,15 @@ const getAlerts = async () => {
         close.setAttribute('class', 'closeAlert');
         close.textContent = "X";
 
-        let text = document.createElement('p');
-        text.textContent = data.alerts[0].description;
-
-        container.appendChild(text)
+        
+        display = data.alerts[0].description.split("*")
+        console.log(display)
+        for (let i=0; i < display.length; i++) {
+            let text = document.createElement('p');
+            text.textContent = `${display[i]}`;
+            container.appendChild(text)
+        }
+        
         container.appendChild(close);
         
   
