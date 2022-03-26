@@ -103,13 +103,11 @@ const getAlerts = async () => {
 
         
         display = data.alerts[0].description.split("*")
-        console.log(display)
         for (let i=0; i < display.length; i++) {
             let text = document.createElement('p');
             text.textContent = `${display[i]}`;
             container.appendChild(text)
         }
-        
         container.appendChild(close);
         
   
