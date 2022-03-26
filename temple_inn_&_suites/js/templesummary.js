@@ -1,6 +1,5 @@
 const requestTemple = 'json/temples.json';
-let value = false
-let website = ''
+let int
 
  fetch(requestTemple)
     .then(function (response) {
@@ -10,13 +9,23 @@ let website = ''
     
     const temples = jsonObject['temples'];
     
+    getTemple(temples)    
     prepareSummary()
-    console.log(temples)
-    temples.forEach(displaySummary);
+    displaySummary(temples);
 
   });
 
+function getTemple(temples){
+    int = getRandomInt(temples.length)    
+    
+    return int
+}
 
+function getRandomInt(max) {
+    int = Math.floor(Math.random() * max);
+
+    return int
+}
 
 function prepareSummary(){
     let container = document.createElement('div');
@@ -26,44 +35,36 @@ function prepareSummary(){
 }
 
 function displaySummary(temples) { 
+
     let card = document.createElement('section');
     let image = document.createElement('img');
     let h3 = document.createElement('h3');
+    let templeStatus = document.createElement('p');
     let address = document.createElement('p');
     let phone = document.createElement('p');
     
 
-    h3.textContent = `${temples.name}`;
-    address.textContent = `${temples.address}`;
-    phone.textContent = `${temples.phone}`;
-    image.setAttribute('src', temples.src);
-    image.setAttribute('alt', `${temples.name}`);
-    card.appendChild(image);
+    h3.textContent = `${temples[int].name}`;
+    templeStatus.textContent = `${temples[int].status}`;
+    address.textContent = `${temples[int].address}`;
+    phone.textContent = `${temples[int].telephone}`;
+    image.setAttribute('src', temples[int].src);
+    image.setAttribute('alt', `${temples[int].name}`);
+
     card.appendChild(h3);
+    card.appendChild(image);
+    card.appendChild(templeStatus);
     card.appendChild(address);
     card.appendChild(phone);
 
+    services = temples[int].services.split(",")
+    console.log(services)
+    for (let i=0; i < services.length; i++) {
+        let service = document.createElement('p');
+        service.textContent = `${services[i]}`;
+        card.appendChild(service)
+    }
+
+
     document.querySelector('div.summary').appendChild(card);
   }
-
-// let view
-
-// function gridView() {
-//     view = document.getElementsByTagName('div');
-//     for (let i=0; i < view.length; i++) {
-//         view[i].className = view[i].className.replace("list", "grid");
-//           }    
-//       }
-      
-// function listView() {
-//     view = document.getElementsByTagName('div');    
-//     for (let i=0; i < view.length; i++) {
-//         view[i].className = view[i].className.replace("grid", "list");
-//           }
-//       }
-  
-// const gridBtn = document.getElementById("grid");
-// gridBtn.onclick = gridView;
-  
-// const listBtn = document.getElementById("list");
-// listBtn.onclick = listView;

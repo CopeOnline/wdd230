@@ -2,7 +2,7 @@
     {
         "name": "Billings Montana Temple",
         "src": "images/01-Billings-Montana-Temple-2220702.jpg",
-        "address": "3100 Rim Point Dr Billings MT 59106-1386 United States",
+        "address": "3100 Rim Point Dr, Billings MT 59106-1386, United States",
         "telephone": "(1) 406-655-0607",
         "status": "PHASE 3: ALL LIVING ORDINANCES AND LIMITED PROXY ORDINANCES",
         "ordinances": "All ordinances are available by appointment only",
@@ -12,7 +12,7 @@
     {
         "name": "Provo City Center Utah Temple",
         "src": "images/Provo-City-Center-Temple08.jpg",
-        "address": "50 South University Ave Provo UT 84601 United States",
+        "address": "50 South University Ave, Provo UT 84601, United States",
         "telephone": "(1) 801-343-2700",
         "status": "PHASE 3: ALL LIVING ORDINANCES AND LIMITED PROXY ORDINANCES",
         "ordinances": "All ordinances are available by appointment only",
@@ -22,7 +22,7 @@
     {
         "name": "Kyiv Ukraine Temple",
         "src": "images/kyiv-ukraine-temple-lds-774302-wallpaper.jpg",
-        "address": "1 Yabluneva Street v. Sofiivs’ka Borshchagivka Kyevo-Sviatoshyns’ky Rayon, Kyivs’ka Oblast, 08131, Ukraine,",
+        "address": "1 Yabluneva Street v., Sofiivs’ka Borshchagivka Kyevo-Sviatoshyns’ky Rayon, Kyivs’ka Oblast, 08131, Ukraine,",
         "telephone": "(380) 44-371-4088",
         "status": "Temple closed",
         "ordinances": "This temple has suspended all operations and ordinances until further notice",
@@ -32,7 +32,7 @@
     {
         "name": "Anchorage Alaska Temple",
         "src": "images/anchorage-temple-lds-253274-wallpaper.jpg",
-        "address": "13161 Brayton Dr Anchorage AK 99516 United States",
+        "address": "13161 Brayton Dr, Anchorage AK 99516, United States",
         "telephone": "(1) 907-348-7890",
         "status": "Temple closed",
         "ordinances": "This temple has suspended all operations and ordinances until further notice",
@@ -62,7 +62,7 @@
     {
         "name": "Logan Utah Temple",
         "src": "images/logan-temple-768083-wallpaper.jpg",
-        "address": "175 N 300 E Logan UT 84321-4720 United States",
+        "address": "175 N 300 E, Logan UT 84321-4720, United States",
         "telephone": "(1) 435-752-3611",
         "status": "Temple closed",
         "ordinances": "All ordinances are available by appointment only",
