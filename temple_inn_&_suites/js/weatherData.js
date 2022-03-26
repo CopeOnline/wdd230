@@ -4,12 +4,13 @@ const localtemp = document.querySelector(".temp")
 const humidity = document.querySelector(".humidity")
 
 const apiInfo = "https://api.openweathermap.org/data/2.5/onecall?lat=38.984653&lon=-77.094711&exclude=hourly,minutely&units=imperial&APPID=da28ef0488cf8a1538d20c2db5897dd8"
+const requestFile = 'json/sample.json';
 
 let data, newTemp, weekday = [], icon, desc;
 
 
 async function getWeather() {
-    const response = await fetch(apiInfo);
+    const response = await fetch(requestFile);
     data = await response.json()
     console.log(data)
     return data
@@ -101,22 +102,14 @@ const getAlerts = async () => {
 
         let close = document.createElement('BUTTON');
         close.setAttribute('class', 'closeAlert');
-        
-        let dayTemp = document.createElement('p');
+        close.textContent = "X";
 
-        day.textContent = `${dayName}`;
-        dayTemp.innerHTML = `${Math.round(data.daily[num].temp.day)}&#176;F `;
+        let text = document.createElement('p');
+        text.textContent = data.alerts[0].description;
 
-        let forecastIcon = data.daily[num].weather[0].icon;
-        let forecastText = data.daily[num].weather.desc;
-        forecastImg = imgDetails(forecastIcon, forecastText)
-
-        image.setAttribute('src', forecastImg[0]);
-        image.setAttribute('alt', forecastImg[1]);
-
-        container.appendChild(day);
-        container.appendChild(image);
-        container.appendChild(dayTemp);
+        container.appendChild(close);
+        container.appendChild(text)
+  
     }else {
     console.log("no")
     console.log(data)
