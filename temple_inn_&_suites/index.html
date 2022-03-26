@@ -50,6 +50,23 @@
                 <a class="heroBtn" href="#">Book Now</a>
             </div>
         </div>
+        <div class="spotlight" >
+            <p>temple spotlight</p>
+            <p>temple summary info</p>
+        </div>
+        <div class="currentWthr">
+            <h2 class="weather">Current conditions</h2>
+            <img class="wIcon" src="#" alt="">
+            <p class="deg"><span class="temp"></span>&#176;F</p>
+            <p class="iconDesc"></p>
+            <hr style="width:90%;text-align:center;">
+            <p class="hum">Humidity:</p>
+            <p class="humid"><span class="humidity"></span></p>
+        </div>
+        <div class="forecast">
+            <h2>Three day forecast</h2>
+            <div class="threeday"></div>
+        </div>
     </main>
     <footer>
         <img src="" alt="">
@@ -63,7 +80,7 @@
                 <label class="info">Name* <input type="text" name="name" required></label>
                 <label class="info">Phone* <input type="tel" name="phone" placeholder="12355551234" required></label>
                 <label class="info">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                <label class="info">Question<textarea name="description" placeholder="How can we help?" required></textarea></label> 
+                <label class="info">Question*<textarea name="description" placeholder="How can we help?" required></textarea></label> 
                 <label class="submit"><input type="submit" value="Join Now"  class="submitBtn"></label>  
             </fieldset>
 
@@ -76,8 +93,6 @@
         <a href="attribute.html">Attributes</a>
         </div>      
     </footer>
-    <script>
-
-    </script>
+    <script src="js/weatherData.js" ></script>
 </body>
 </html>
