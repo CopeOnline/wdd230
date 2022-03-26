@@ -5,7 +5,8 @@ const humidity = document.querySelector(".humidity")
 
 const apiInfo = "https://api.openweathermap.org/data/2.5/onecall?lat=38.984653&lon=-77.094711&exclude=hourly,minutely&units=imperial&APPID=da28ef0488cf8a1538d20c2db5897dd8"
 
-let data, newTemp, weekday = [];
+let data, newTemp, weekday = [], icon, desc;
+
 
 async function getWeather() {
     const response = await fetch(apiInfo);
@@ -29,12 +30,14 @@ const fillData = async () => {
 
 const getIconDesc = async () => {
     await fillData();
-    let icon = data.current.weather[0].icon;
-    let desc = data.current.weather[0].description;
+    icon = data.current.weather[0].icon;
+    desc = data.current.weather[0].description;
 
-    weatherIcon.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
-    weatherIcon.alt = `openweathermap.com API icon: ${desc}`;
+    iconData = imgDetails(icon, desc)
+    weatherIcon.src = iconData[0];
+    weatherIcon.alt = iconData[1];
     iconDesc.textContent = desc.toUpperCase()
+    return icon
 } 
 
 const getForecast = async () => {
@@ -54,9 +57,14 @@ const getForecast = async () => {
 
         day.textContent = `${dayName}`;
         dayTemp.innerHTML = `${Math.round(data.daily[num].temp.day)}&#176;F `;
-        image.setAttribute('src', `https://openweathermap.org/img/wn/${data.daily[num].weather[0].icon}@2x.png`);
-        image.setAttribute('alt', `openweathermap.com API icon: ${data.daily[num].weather.desc}`);
-        // Add/append the section(card) with the h2 element
+
+        let forecastIcon = data.daily[num].weather[0].icon;
+        let forecastText = data.daily[num].weather.desc;
+        forecastImg = imgDetails(forecastIcon, forecastText)
+
+        image.setAttribute('src', forecastImg[0]);
+        image.setAttribute('alt', forecastImg[1]);
+
         container.appendChild(day);
         container.appendChild(image);
         container.appendChild(dayTemp);
@@ -73,6 +81,13 @@ const getDay = () => {
         const alertOptions = {weekday: 'long', month: "long", day: "numeric", year: "numeric", hour: "numeric", minute: "numeric", second: "numeric", timeZoneName: "short" }
     }
     return weekday
+}
+
+const imgDetails = () => {
+    let imgIcon = `https://openweathermap.org/img/wn/${icon}@2x.png`;
+    let imgText = `openweathermap.com API icon: ${desc}`;
+
+    return [imgIcon, imgText]
 }
 
 const getAlerts = async () => {
