@@ -107,8 +107,9 @@ const getAlerts = async () => {
         let text = document.createElement('p');
         text.textContent = data.alerts[0].description;
 
-        container.appendChild(close);
         container.appendChild(text)
+        container.appendChild(close);
+        
   
     }else {
     console.log("no")
