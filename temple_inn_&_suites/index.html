@@ -41,19 +41,41 @@
         </nav>
     </header>
     <main class="index">
-        
         <div class="hero">   
             <picture>                        
-            <source srcset="images/600_hotel_room.jpg" media="(max-width: 600px)">
-            <source srcset="images/950_hotel_room.jpg" media="(max-width: 960px)">
-            <img class="heroImg" src="images/1200_hotel_room.jpg" alt="group meeting"/>   
+            <source srcset="images/600_hero.jpg" media="(max-width: 600px)">
+            <source srcset="images/960_hero.jpg" media="(max-width: 960px)">
+            <img class="heroImg" src="images/1200_hero.jpg" alt="group meeting"/>   
             </picture>
             <div class="callToAction">
                 <a class="heroBtn" href="#">Book Now</a>
             </div>
+            <h1>Welcome to Temple Inn & Suites</h1>
+        <p>Choose any one of our convenient locations for a comfortable night stay. Our free amenities will make sure your stay is cozy and relaxing. Each one of our locations is specially chosen to offer ideal accomodations for your temple trip. No matter what ordinace you are visiting the temple for we help. Our event center can host your reception, if you have children our bring them to our supervised playroom while you are attending the temple. These services and many more are intended to help you make your temple visit rewarding and comfortable.</p>
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides">
+      <img src="images/600_hotel_room.jpg" style="width:70%">
+    </div>
+    <div class="mySlides">
+      <img src="images/wedding.jpg" style="width:70%">
+    </div>
+    <div class="mySlides">
+      <img src="images/girl_with_flowers.jpg" style="width:70%">
+    </div>
+    <div class="mySlides">
+        <img src="images/reception_hall.jpg" style="width:70%">
+      </div>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
         </div>
-        <div class="summary" >
-        </div>
+        <div class="summary" ></div>
         <div class="currentWthr">
             <h2 class="weather">Current conditions</h2>
             <img class="wIcon" src="#" alt="">
@@ -94,8 +116,9 @@
         <a href="attribute.html">Attributes</a>
         </div>      
     </footer>
-    <script src="js/weatherData.js" ></script>
-    <script src="js/responsive.js" ></script>
-    <script src="js/templesummary.js" ></script>
+    <script src="js/weatherData.js"></script>
+    <script src="js/responsive.js"></script>
+    <script src="js/templesummary.js"></script>
+    <script src="js/slideshow.js"></script>
 </body>
 </html>

@@ -56,7 +56,7 @@ const getForecast = async () => {
         let dayTemp = document.createElement('p');
 
         day.textContent = `${dayName}`;
-        dayTemp.innerHTML = `${Math.round(data.daily[num].temp.day)}&#176;F `;
+        dayTemp.innerHTML = `High: ${Math.round(data.daily[num].temp.day)}&#176;F `;
 
         let forecastIcon = data.daily[num].weather[0].icon;
         let forecastText = data.daily[num].weather.desc;
