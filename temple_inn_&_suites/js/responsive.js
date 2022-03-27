@@ -20,7 +20,7 @@ function toggleContact(){
 
 function toggleNotice(){
     document.getElementById("danger").classList.toggle("open");
-    document.getElementById("danger").classList.toggle("close");
+    document.getElementById("closeAlert").classList.toggle("close");
     
 }
 
@@ -30,6 +30,6 @@ x.onclick = toggleMenu;
 const y = document.getElementById("phoneBtn");
 y.onclick = toggleContact;
 
-const z = document.getElementById("alerts");
+const z = document.getElementById("closeAlert");
 z.onclick = toggleNotice;
 

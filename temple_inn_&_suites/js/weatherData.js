@@ -97,11 +97,6 @@ const getAlerts = async () => {
         container.setAttribute('id', 'danger')
         container.setAttribute('class', 'open')
         document.querySelector('div#alerts').appendChild(container);
-
-        let close = document.createElement('BUTTON');
-        close.setAttribute('class', 'closeAlert');
-        close.textContent = "X";
-
         
         display = data.alerts[0].description.split("*")
         for (let i=0; i < display.length; i++) {
@@ -109,7 +104,6 @@ const getAlerts = async () => {
             text.textContent = `${display[i]}`;
             container.appendChild(text)
         }
-        container.appendChild(close);
         
   
     }else {
