@@ -94,8 +94,9 @@ const getAlerts = async () => {
     if (JSON.stringify(data).includes("alerts")) 
     {
         let container = document.createElement('div');
-        container.setAttribute('class', 'danger')
-        document.querySelector('div.alerts').appendChild(container);
+        container.setAttribute('id', 'danger')
+        container.setAttribute('class', 'open')
+        document.querySelector('div#alerts').appendChild(container);
 
         let close = document.createElement('BUTTON');
         close.setAttribute('class', 'closeAlert');

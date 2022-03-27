@@ -1,0 +1,57 @@
+*{
+    margin: 0 auto;
+    font-size: 16px;
+}
+body {
+    position: relative;
+    background-color: #EAEBED;
+ 
+}
+h1, h2, h3, h4, a {
+    font-family: 'Literata', sans-serif;
+}
+p, ul li, fieldset, legend, label{
+    font-family: 'Rasa', sans-serif; 
+}
+a {
+    text-decoration: none;
+}
+.homeLink {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    width: 8em;
+}
+ul {
+    display: none;
+}
+ul.open {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    height: 1rem;
+    margin-top: 6.5em;
+    right: 0;
+    width: 100%
+}
+div.open {
+    display: block;
+}
+div.close{
+    display: none;
+}
+
+header nav #hamBtn span:nth-child(1), header nav #phoneBtn span:nth-child(1) { display: block;}
+header nav #hamBtn span:nth-child(2), header nav #phoneBtn span:nth-child(2) { display: none;}
+
+header nav #hamBtn.open span:nth-child(1), header nav #phoneBtn.open span:nth-child(1) { display: none;}
+header nav #hamBtn.open span:nth-child(2), header nav #phoneBtn.open span:nth-child(2) { display: block;}
+
+header nav #danger span:nth-child(1) { display: block;}
+header nav #danger span:nth-child(2) { display: none;}
+
+
