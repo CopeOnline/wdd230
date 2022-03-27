@@ -106,12 +106,32 @@ header nav #hamBtn.open span:nth-child(1), header nav #phoneBtn.open span:nth-ch
 header nav #hamBtn.open span:nth-child(2), header nav #phoneBtn.open span:nth-child(2) { display: block;}
 
 #menu li a {
-    display: flex;
-    border: 2px solid black;
+    display: grid;
+    border: 2px solid grey;
     background-color: #54205e;
     color: #EAEBED;
-    padding: 7px;
-    font-size: 44px;
+    padding: 20px ;
+    font-size: 25px;
+    text-align: center;
+    list-style-type: none;
+}
+#menu {
+    margin-top: 4.9em;
+}
+#contact li {
+    display: grid;
+    border: 2px solid grey;
+    background-color: #54205e;
+    color: #f2f4f8;
+    padding: 20px ;
+    font-size: 18px;
+    list-style-type: none;
+}
+#contact {
+    margin-top: 4.9em;
+}
+#contact li:nth-child(1) {
+    font-size: 24px;
 }
 main img{
     width: 100%;
