@@ -36,6 +36,7 @@ header nav {
     font-weight: 800;
     background-color: #54205e;
     color: #EAEBED;
+    border-radius: 10px 10px 1em 1em;
 }
 .homeLink span {
     padding: 5px;
