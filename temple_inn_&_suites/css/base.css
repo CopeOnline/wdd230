@@ -263,6 +263,10 @@ fieldset {
     display: flex;
     flex-direction: column;
 }
+legend {
+   padding-top: 1em;
+    font-size: 1.5em;
+}
 textarea {
     width: 178px;
 }
