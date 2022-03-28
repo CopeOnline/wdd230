@@ -137,4 +137,16 @@ header nav #hamBtn.open span:nth-child(2), header nav #phoneBtn.open span:nth-ch
 main img{
     width: 100%;
 }
+.callToAction {
+    position: absolute;
+    background-color: #3F7D20;
+    padding: 10px;
+    border-radius: 1em;
+    margin: 9.5em 0 1em ;
+}
+.heroBtn {
+    color: #f2f4f8;
+    font-size: 25px;
+
+}
 
