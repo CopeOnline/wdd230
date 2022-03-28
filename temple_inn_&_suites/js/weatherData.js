@@ -24,7 +24,7 @@ const fillData = async () => {
 
     let currentTemp = Math.round(newTemp)
     localtemp.textContent += `${currentTemp}`;
-    humidity.textContent = `${humid} %`
+    humidity.textContent = `${humid}%`
 
     return newTemp
     }
