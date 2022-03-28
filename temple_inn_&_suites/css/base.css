@@ -202,19 +202,21 @@ hr {
     text-align: center;
 }
 div.one, div.two, div.three {
-    width: 80px;
-    border: 2px solid grey;
+    width: 70px;
     background-color: #7ac4d6;
     border-radius: 1.5em;
     text-align: center;
+    margin: 0 10px;
 }
 .threeday {
     display: flex;
     flex-direction: row;
-    margin: 5px;
     justify-content: space-between;
 }
 .threeday h2 {
     font-size: 16px;
+}
+.threeday p {
+    padding-bottom: 15px;
 }
 
