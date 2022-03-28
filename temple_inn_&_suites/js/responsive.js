@@ -32,4 +32,3 @@ y.onclick = toggleContact;
 
 const z = document.getElementById("closeAlert");
 z.onclick = toggleNotice;
-

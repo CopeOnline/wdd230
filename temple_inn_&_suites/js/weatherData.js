@@ -2,6 +2,7 @@ const weatherIcon = document.querySelector(".wIcon")
 const iconDesc = document.querySelector(".iconDesc")
 const localtemp = document.querySelector(".temp")
 const humidity = document.querySelector(".humidity")
+const closeBtn = document.getElementById("closeAlert")
 
 const apiInfo = "https://api.openweathermap.org/data/2.5/onecall?lat=38.984653&lon=-77.094711&exclude=hourly,minutely&units=imperial&APPID=da28ef0488cf8a1538d20c2db5897dd8"
 const requestFile = 'json/sample.json';
@@ -10,7 +11,7 @@ let data, newTemp, weekday = [], icon, desc;
 
 
 async function getWeather() {
-    const response = await fetch(requestFile);
+    const response = await fetch(apiInfo);
     data = await response.json()
     return data
 
@@ -105,12 +106,9 @@ const getAlerts = async () => {
             text.textContent = `${display[i]}`;
             container.appendChild(text)
         }
-        
-  
     }else {
-    console.log("no")
-    console.log(data)
-}
+        closeBtn.setAttribute('class', 'close')
+    }
 }
 
   
