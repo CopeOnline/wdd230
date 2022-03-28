@@ -1,38 +1,3 @@
-const requestTemple = 'json/temples.json';
-let int
-
- fetch(requestTemple)
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (jsonObject) { 
-    
-    const temples = jsonObject['temples'];
-    
-    getTemple(temples)    
-    prepareSummary()
-    displaySummary(temples);
-
-  });
-
-function getTemple(temples){
-    int = getRandomInt(temples.length)    
-    
-    return int
-}
-
-function getRandomInt(max) {
-    int = Math.floor(Math.random() * max);
-
-    return int
-}
-
-function prepareSummary(){
-    let container = document.createElement('div');
-    container.setAttribute('class', 'temple')
-    document.querySelector('div.summary').appendChild(container);
-
-}
 
 function displaySummary(temples) { 
 
@@ -57,9 +22,17 @@ function displaySummary(temples) {
     card.appendChild(h3);
     card.appendChild(image);
     card.appendChild(templeStatus);
-    card.appendChild(phone);
     card.appendChild(address);
-    
+    card.appendChild(phone);
+    card.appendChild(servicesh3);
+
+
+services = temples[int].services.split(",")
+for (let i=0; i < services.length; i++) {
+    let service = document.createElement('p');
+    service.textContent = `${services[i]}`;
+    card.appendChild(service)
+
 
     document.querySelector('div.summary').appendChild(card);
-  }
+}}
