@@ -43,12 +43,13 @@ const getIconDesc = async () => {
 const getForecast = async () => {
     await getIconDesc();
     getDay();
+    const list = ["one", "two", "three"]
     for (let i=0; i < 3; i++) {
         
         let dayName= weekday[i];
         let num = i + 1
         let container = document.createElement('div');
-        container.setAttribute('class', `${dayName}`)
+        container.setAttribute('class', `${list[i]}`)
         document.querySelector('div.threeday').appendChild(container);
 
         let day = document.createElement('h2');

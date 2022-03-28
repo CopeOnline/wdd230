@@ -176,3 +176,45 @@ section {
 section p {
     margin: 0 ;
 }
+.wthrcontainer {
+    display: flex;
+    border: 2px solid grey;
+    border-radius: 1em;
+}
+.wthrcontainer p {
+    margin: 0;
+    padding: 0px;
+    font-size: 1em;
+}
+.wthrcontainer img {
+    width: 70px;
+}
+hr {
+    display: none;
+}
+.currentWthr {
+    border: 2px solid grey;
+    background-color: #7ac4d6;
+    padding: 10px;
+    margin: 10px;
+    width: 125px;
+    border-radius: 1.5em;
+    text-align: center;
+}
+div.one, div.two, div.three {
+    width: 80px;
+    border: 2px solid grey;
+    background-color: #7ac4d6;
+    border-radius: 1.5em;
+    text-align: center;
+}
+.threeday {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    justify-content: space-between;
+}
+.threeday h2 {
+    font-size: 16px;
+}
+
