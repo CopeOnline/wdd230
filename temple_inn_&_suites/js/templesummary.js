@@ -38,11 +38,10 @@ function displaySummary(temples) {
 
     let card = document.createElement('section');
     let image = document.createElement('img');
-    let h3 = document.createElement('h3');
+    let h3 = document.createElement('h2');
     let templeStatus = document.createElement('p');
     let address = document.createElement('p');
     let phone = document.createElement('p');
-    let servicesh3 = document.createElement('h3');
     
 
     h3.textContent = `${temples[int].name}`;
@@ -52,7 +51,6 @@ function displaySummary(temples) {
     image.setAttribute('src', temples[int].src);
     image.setAttribute('alt', `${temples[int].name}`);
     image.setAttribute('loading', 'lazy')
-    servicesh3.textContent = "Local Services: "
 
     card.appendChild(h3);
     card.appendChild(image);
