@@ -134,6 +134,9 @@ header nav #hamBtn.open span:nth-child(2), header nav #phoneBtn.open span:nth-ch
 #contact li:nth-child(1) {
     font-size: 24px;
 }
+.booking {
+    display: none;
+}
 main img{
     width: 100%;
 }
