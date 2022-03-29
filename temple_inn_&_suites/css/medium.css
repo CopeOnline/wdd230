@@ -125,6 +125,7 @@
         border: none;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin-top: 4em;
     }
     article h2 {
         margin: 0;
@@ -142,5 +143,46 @@
     div.one, div.two, div.three {
         margin-bottom: 10px;
     }
-    .fore
+    footer {
+        display: grid;
+        grid-template-columns: 400px 1fr 100px;
+    }
+    footer div.info {
+        grid-column: 1/2;
+    }
+    footer form {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin: 1em 0 0 3em;
+    }
+    footer div.social {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        margin: 8em 0;
+    }
+    footer fieldset label {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 250px;
+        text-align: right;
+    }
+    footer #submitBtn {
+        margin: 0 2.2em;
+    }
+    footer div.specs {
+        grid-column: 1/5;
+        display: flex;
+        flex-direction: row;
+    }
+    footer p.lastupdated {
+        margin: 0 9em;
+    }
+    footer div.info p.phone, footer div.info a {
+        margin-left: 7em;
+    }
+
+
+
+
+
 }   
