@@ -36,7 +36,7 @@ function prepareSummary(){
 
 function displaySummary(temples) { 
 
-    let card = document.createElement('section');
+    let card = document.createElement('article');
     let image = document.createElement('img');
     let h3 = document.createElement('h2');
     let templeStatus = document.createElement('p');
