@@ -81,7 +81,6 @@
     .callToAction {
         right: 7.5em;
         top: 9em;
-        z-index: 1;
     }
     .content {
         display: grid;
