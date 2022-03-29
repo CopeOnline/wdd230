@@ -151,7 +151,7 @@ main img{
     color: #f2f4f8;
     font-size: 25px;
 }
-.hero p {
+.index p {
     padding: 10px;
     font-size: 1.2em;
 }
@@ -159,7 +159,6 @@ h1 {
     display: flex;
     flex-direction: column;
     text-align: center;
-    box-shadow: 0 5px 5px  #3F7D20;
 }
 div.mySlides {
     height: 258px;
@@ -212,6 +211,9 @@ div.one, div.two, div.three {
     border-radius: 1em;
     text-align: center;
     margin: 0 5px;
+}
+.forecast > h2 {
+    margin-left: 1em;
 }
 .threeday {
     display: flex;
