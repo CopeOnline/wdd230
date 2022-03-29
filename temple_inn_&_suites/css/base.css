@@ -179,18 +179,18 @@ article {
 article p {
     margin: 0 ;
 }
-.wthrcontainer {
+.wthrContainer {
     display: flex;
     border: 2px solid grey;
     border-radius: 1em;
     margin-bottom: 1em;
 }
-.wthrcontainer p {
+.wthrContainer p {
     margin: 0;
     padding: 0px;
     font-size: 1em;
 }
-.wthrcontainer img {
+.wthrContainer img {
     width: 70px;
 }
 hr {
