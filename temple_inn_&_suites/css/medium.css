@@ -1,5 +1,48 @@
 @media only screen and (min-width: 32.5em){
-    
+
+    header nav {
+        grid-template-columns: 50px 1fr 50px 200px;
+        height: fit-content;
+    }
+    .homeLink {
+        border: none;
+        display: block;
+        font-weight: 400;
+        position: relative;
+        margin: 0 0 15px 0;
+        padding-top: 16px;
+        background-color: transparent;
+        grid-column: 2/3;
+        width: 300px;
+        height: fit-content;
+    }
+    .homeLink span {
+        font-size: 26px;
+    }
+    div.social {
+        display: flex;
+        grid-column: 4/5;
+        margin-left: 2.5em;
+        height: 1em;
+    }
+    div.social a img{
+        width: 32px;
+        height: 44px;
+        padding: 16px 10px;
+    }
+    #hamBtn {
+        grid-column: 3/4;
+        height: 1em;
+        padding-top: 16px;
+        font-size: 44px;
+    }
+    #phoneBtn {
+        height: 1.5em;
+        padding-top: 20px;
+        grid-column: 1/2;
+
+    }
 
 
-}
+
+}   
