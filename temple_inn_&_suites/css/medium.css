@@ -41,7 +41,7 @@
         padding-top: 20px;
         grid-column: 1/2;
     }
-    .hero {
+    .hero-container {
         display:grid;
         grid-template-columns: 1fr 375px;
     }

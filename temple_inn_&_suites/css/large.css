@@ -1,0 +1,130 @@
+@media only screen and (min-width: 60em) {
+    
+    ul {
+        display: flex;
+        list-style-type: none;
+    }
+    #menu {
+        margin: 0;
+        justify-content: flex-end;
+    }
+    #contact {
+        margin: 0;
+        flex-direction: column;
+        padding: 0;
+    }
+    #menu li a {
+        border: none;
+        margin-top: .3em;
+    }
+    #contact li {
+        border: none;
+        display: inline;
+        padding: 5px;
+        font-size: 1em;
+        align-self: flex-end;
+    }
+    #hamBtn {
+        display: none;
+    }
+    #phoneBtn {
+        display: none;
+    }
+    header nav {
+        grid-template-columns: 300px 4fr 1.75fr 1fr;
+    }
+    .homeLink {
+        grid-column: 1/2;
+        font-size: 2em;
+        margin-top: .2em;
+    }
+    .social a img {
+        width: 24px;
+    }
+    .hero-container {
+        grid-template-columns: 1fr 375px 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .heroPic {
+        grid-column: 1/4;
+        grid-row: 1/4;
+    }
+    .callToAction {
+        margin: 4em 0 10px 10px;
+        position: static;
+        width: 300px;
+        text-align: center;
+        justify-self: center;
+        align-self: flex-end;
+        grid-column: 2/3;
+        grid-row: 3/4;
+        height: 32px;
+    }
+    form.booking-container {
+        grid-column: 1/4;
+        grid-row: 2/3;
+        width: fit-content;
+        align-self: center;
+        justify-self: center ;
+        background-color:rgb(84, 32, 94, 0.8);
+        height: 95px;
+        border-radius: 1em 10em 1em 10em;
+    }
+    .booking {
+        flex-wrap: nowrap;
+    }
+    label.dates {
+        display: flex;
+        width: 14em;
+        font-size: 1.5em;
+        padding: 5px 10px 0 0 ;
+        margin-left: 1em;
+    }
+    form.booking-container input {
+        width: 200px;
+    }
+    #checkout {
+        margin: 0 1em 0 1em;
+        padding: 0;
+    }
+    .content {
+        max-width: 1200px;
+        margin: auto;
+        grid-gap: 1em;
+    }
+    div.wthrContainer {
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+    .content h1, .content > p {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .content > p {
+        align-self: center;
+    }
+    .content h1 {
+        margin-top: 3em;
+    }
+
+    .slideshow-container {
+        grid-column: 3/5;
+        grid-row: 2/3;
+
+    }
+    div.summary {
+        grid-column: 1/5;
+    }
+    article img{
+        grid-column: 1/2;
+        box-shadow: 0 0 15px 5px #3F7D20; ;
+        border-radius: 2em;
+    }
+    article h2 {
+        margin: 2em 0 0 2.5em;
+    }
+    article p {
+        margin-left: 2em;
+    }
+
+}
