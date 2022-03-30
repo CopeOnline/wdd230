@@ -11,7 +11,7 @@ let data, newTemp, weekday = [], icon, desc;
 
 
 async function getWeather() {
-    const response = await fetch(requestFile);
+    const response = await fetch(apiInfo);
     data = await response.json()
     return data
 
