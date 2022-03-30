@@ -86,8 +86,12 @@
         border-radius: .5em;
     }
     .callToAction {
-        right: 7.5em;
-        top: 22em;
+        position: static;
+        grid-column: 2/3;
+        width: 200px;
+        text-align: center;
+        align-self: center;
+        justify-self: center;
     }
     .content {
         display: grid;

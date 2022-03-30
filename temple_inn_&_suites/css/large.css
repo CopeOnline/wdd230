@@ -185,5 +185,8 @@
     footer div.info p.phone, div.info p.addrss, footer div.info a {
         margin-left: 12em;
     }
+    #danger p {
+        text-align: center;
+    }
 
 }
