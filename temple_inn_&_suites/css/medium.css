@@ -49,11 +49,10 @@
         grid-column: 1/3;
         grid-row: 1/2;
     }
-    form.book {
+    form.booking-container {
         grid-column: 2/3;
         grid-row: 1/2;
         width: 375px;
-
         background-color:rgb(84, 32, 94, 0.6);
         right: 0;
         top: 5.4em;
@@ -71,7 +70,7 @@
         color: #f2f4f8;
         width: 170px;
     }
-    form.book input {
+    form.booking-container input {
         width: 160px;
         font-size: 1em;
     }
@@ -152,7 +151,7 @@
     }
     footer {
         display: grid;
-        grid-template-columns: 400px 1fr 100px;
+        grid-template-columns: 400px 1fr 70px;
     }
     footer div.info {
         grid-column: 1/2;
@@ -160,12 +159,19 @@
     footer form {
         grid-column: 2/3;
         grid-row: 1/2;
-        margin: 1em 0 0 3em;
+        margin: 1em 0 0 1em;
+        width: 300px;
+        justify-self: end;
     }
     footer div.social {
         grid-column: 3/4;
         grid-row: 1/2;
         margin: 8em 0;
+    }
+    footer fieldset{
+        align-items: right;
+        width: 300px;
+        margin: 0;
     }
     footer fieldset label {
         display: grid;
