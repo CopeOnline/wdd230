@@ -158,6 +158,7 @@
         height: 80px;
         border-left: 2px solid #54205e;
         border-right: 2px solid #54205e;
+        padding: 15px 5px;
     }
     .threeday p {
         margin: 20px 1em 0 1em;
