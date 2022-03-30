@@ -4,9 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Book at any of our Temple Inn & Suites locations, our facilities are ready to host your events.">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Literata&family=Rasa&display=swap" rel="stylesheet">
+    <title>Temple Inn & Suites</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+        <a href="index.html" class="homeLink" >Temple <span class="2line" >Inn & Suites</span></a>
+        <div class="social">
+            <a href="http://www.facebook.com"><img class="facebook" src="images/facebook.svg" alt="facebook icon" width="44" height="44"></a>
+            <a href="http://www.instagram.com"><img class="instagram" src="images/instagram.svg" alt="instagram icon" width="44" height="44"></a>
+            <a href="http://www.twitter.com"><img class="twitter" src="images/twitter.svg" alt="twitter icon" width="44" height="44"></a>
+        </div>
+        <button id="hamBtn"><span>&#9776;</span><span class="closeHam">X</span></button>
+        <ul id="menu">
+            <li><a class="homeBtn" href="index.html">Home</a></li>
+            <li><a class="rsvpBtn" href="reservation.html">Reservations</a></li>
+            <li><a class="svcBtn" href="services.html">Services</a></li>
+            <li><a class="templeBtn" href="temple.html">Temples</a></li>
+        </ul> 
+        <button id="phoneBtn"><span><img src="images/phone_icon.svg" alt="telephone handset" width="44" height="44"></span><span class="closePhone">X</span></button>
+        <ul id="contact">
+            <li>Phone: <span>+1111111111</span></li>
+            <li>Email: <span>help@templeinnandsuite.com</span></li>
+            <li> <span>4800 MontgomeryLn #300, Bethseda, MD 20814</span></li>
+        </ul>
+        </nav>
+    </header>
+    <main class="services">
+
+    </main>
+    <footer>
+        <div class="info" >
+            <p class="name" >Temple Inn & Suites</p>
+            <p class="phone" >Phone: <span class="numb" >+11111111111</span></p>
+            <p class="addrss" >Address: <span class="detail" >4800 Montgomery Ln #300, Bethseda, MD 20814</span></p>
+            <a href="https://goo.gl/maps/ABJXwFVP2LtVzTfb6" class="map" >📍 Google Map</a>
+        </div>
+        <form method="get" action="#">
+            <fieldset>
+                <legend>Have a Question?</legend>
+                <label class="info">Name* <input type="text" name="name" required></label>
+                <label class="info">Phone* <input type="tel" name="phone" placeholder="12355551234" required></label>
+                <label class="info">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="info">Question*<textarea name="description" placeholder="How can we help?" required></textarea></label> 
+                <label class="submit"><input type="submit" value="Send Now" id="submitBtn"></label>  
+            </fieldset>
+        </form>
+        <div class="social">
+            <a href="http://www.facebook.com"><img class="facebook" src="images/facebook.svg" alt="facebook icon" width="44" height="44"></a>
+            <a href="http://www.instagram.com"><img class="instagram" src="images/instagram.svg" alt="instagram icon" width="44" height="44"></a>
+            <a href="http://www.twitter.com"><img class="twitter" src="images/twitter.svg" alt="twitter icon" width="44" height="44"></a>
+        </div>
+        <div class="specs" >
+        <p>&copy; 2022 Temple Inn & Suites</p>
+        <p class="lastupdated"></p>
+        <a href="attribute.html">Attribution</a>
+        </div>      
+    </footer>
+    <script src="js/weatherData.js"></script>
+    <script src="js/responsive.js"></script>
+    <script src="js/templesummary.js"></script>
+    <script src="js/slideshow.js"></script>
 </body>
 </html>
