@@ -106,10 +106,10 @@
         grid-row: 2/3;
     }
     .content > p {
-        align-self: center;
+        margin-top: 9em;
     }
     .content h1 {
-        margin-top: 3em;
+        margin-top: 2em;
     }
 
     .slideshow-container {

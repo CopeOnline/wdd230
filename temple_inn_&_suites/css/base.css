@@ -163,7 +163,8 @@ h1 {
 }
 
 .content div.mySlides img{
-    box-shadow: 0 0 15px 5px #3F7D20; ;
+    box-shadow: 0 0 15px 5px #3F7D20; 
+    border-radius: 1em;
 }
 article {
     display: flex;
