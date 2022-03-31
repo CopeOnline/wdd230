@@ -114,7 +114,13 @@ const getAlerts = async () => {
   
 window.addEventListener('load', getAlerts());
 
-
+function toggleNotice(){
+    document.getElementById("danger").classList.toggle("open");
+    document.getElementById("closeAlert").classList.toggle("close");
+    
+}
+const z = document.getElementById("closeAlert");
+z.onclick = toggleNotice;
 
 
 

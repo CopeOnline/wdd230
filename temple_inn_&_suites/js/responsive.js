@@ -1,8 +1,4 @@
 
-const d = new Date();
-let year = d.getFullYear();
-let day = weekday[d.getDay()];
-
 const lastupdate = document.querySelector(".lastupdated");
 lastupdate.textContent += `Updated: ${document.lastModified}`;
 
@@ -18,11 +14,6 @@ function toggleContact(){
     
 }
 
-function toggleNotice(){
-    document.getElementById("danger").classList.toggle("open");
-    document.getElementById("closeAlert").classList.toggle("close");
-    
-}
 
 const x = document.getElementById("hamBtn");
 x.onclick = toggleMenu;
@@ -30,5 +21,4 @@ x.onclick = toggleMenu;
 const y = document.getElementById("phoneBtn");
 y.onclick = toggleContact;
 
-const z = document.getElementById("closeAlert");
-z.onclick = toggleNotice;
+
