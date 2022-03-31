@@ -21,4 +21,3 @@ x.onclick = toggleMenu;
 const y = document.getElementById("phoneBtn");
 y.onclick = toggleContact;
 
-

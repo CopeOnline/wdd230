@@ -312,7 +312,15 @@ div.specs a {
 .temples {
     margin: 5em 0 0 0;
 }
-.temples section img {
-    width: auto;
+.temples section {
+    border: 3px solid #3F7D20;
+    width: 90%;
+    margin: 2em auto;
 }
+.temples img {
+    border-bottom: 3px solid #3F7D20;
 
+}
+.temples label {
+    margin: 5em;
+}
