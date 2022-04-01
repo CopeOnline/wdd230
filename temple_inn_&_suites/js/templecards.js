@@ -22,7 +22,7 @@ function displayTemples(temple) {
     const phone = document.querySelector("p.phone");
     const address = document.querySelector("p.address");
     const button = document.querySelector(`button.like`);
-    const detail = document.querySelector(`button.expand`);
+    const detail = document.querySelector(`button.show`);
     const ordinances = document.querySelector("p.ordinances");
     const service = document.querySelector("ul.localServices");
     const closed = document.querySelector("ul.closures");
@@ -54,10 +54,6 @@ function displayTemples(temple) {
         card.appendChild(closed)
     }
 
-    className = temple.name.split(" ")
-    button.classList.add(`${className[0]}`)
-    detail.setAttribute('id', `${templeNum[num]}`)
- 
     card.appendChild(image);
     card.appendChild(button);
     card.appendChild(h2);
