@@ -7,7 +7,7 @@
         "status": "PHASE 3: ALL LIVING ORDINANCES AND LIMITED PROXY ORDINANCES",
         "ordinances": "All ordinances are available by appointment only",
         "services": "Clothing rental available, No cafeteria available, No patron housing available, Distribution center nearby",
-        "closures": "Saturday, 2 April 2022, Monday, 9 May 2022 - Monday, 23 May 2022, Saturday, 1 October 2022, Monday, 10 October 2022 - Monday, 24 October 2022, Wednesday, 23 November 2022 - Thursday, 24 November 2022, Friday, 23 December 2022 - Saturday, 24 December 2022, Saturday, 31 December 2022"
+        "closures": "Saturday, 2 April 2022 *Monday 9 May 2022 - Monday, 23 May 2022 *Saturday, 1 October 2022 *Monday, 10 October 2022 - Monday, 24 October 2022 *Wednesday, 23 November 2022 - Thursday, 24 November 2022 *Friday, 23 December 2022 - Saturday, 24 December 2022 *Saturday, 31 December 2022"
     },    
     {
         "name": "Provo City Center Utah Temple",
@@ -17,7 +17,7 @@
         "status": "PHASE 3: ALL LIVING ORDINANCES AND LIMITED PROXY ORDINANCES",
         "ordinances": "All ordinances are available by appointment only",
         "services": "Clothing rental available, No cafeteria available, No patron housing available, Distribution center nearby",
-        "closures": "Saturday, 2 April 2022, Monday, 20 June 2022 - Monday, 4 July 2022, Saturday, 1 October 2022, Wednesday, 23 November 2022 (Limited Operations), Thursday, 24 November 2022, Monday, 28 November 2022 - Monday, 12 December 2022, Saturday, 24 December 2022, Saturday, 31 December 2022"
+        "closures": "Saturday, 2 April 2022 *Monday, 20 June 2022 - Monday, 4 July 2022 *Saturday, 1 October 2022 *Wednesday, 23 November 2022 (Limited Operations) *Thursday, 24 November 2022 *Monday, 28 November 2022 - Monday, 12 December 2022 *Saturday, 24 December 2022 *Saturday, 31 December 2022"
     },
     {
         "name": "Kyiv Ukraine Temple",
@@ -27,7 +27,7 @@
         "status": "Temple closed",
         "ordinances": "This temple has suspended all operations and ordinances until further notice",
         "services": "No clothing rental available, No cafeteria available, No patron housing available, Distribution center nearby",
-        "closures": "Thursday, 24 February 2022 - Sunday, 24 April 2022, Monday, 19 September 2022 - Monday, 28 November 2022"
+        "closures": "Thursday, 24 February 2022 - Sunday, 24 April 2022 *Monday, 19 September 2022 - Monday, 28 November 2022"
     },
     {
         "name": "Anchorage Alaska Temple",
@@ -37,7 +37,7 @@
         "status": "Temple closed",
         "ordinances": "This temple has suspended all operations and ordinances until further notice",
         "services": "No clothing rental available, No cafeteria available, No patron housing available, No distribution center nearby",
-        "closures": "Monday, 21 March 2022 - Friday, 1 April 2022, Saturday, 2 April 2022 - Sunday, 3 April 2022, Monday, 30 May 2022, Monday, 4 July 2022, Monday, 5 September 2022, Monday, 19 September 2022 - Friday, 30 September 2022, Saturday, 1 October 2022 - Sunday, 2 October 2022, Thursday, 24 November 2022, Saturday, 24 December 2022 - Sunday, 25 December 2022, Saturday, 31 December 2022 - Sunday, 1 January 2023"
+        "closures": "Monday, 21 March 2022 - Friday, 1 April 2022 *Saturday, 2 April 2022 - Sunday, 3 April 2022 *Monday, 30 May 2022 *Monday, 4 July 2022 *Monday, 5 September 2022 *Monday, 19 September 2022 - Friday, 30 September 2022 *Saturday, 1 October 2022 - Sunday, 2 October 2022 *Thursday, 24 November 2022 *Saturday, 24 December 2022 - Sunday, 25 December 2022 *Saturday, 31 December 2022 - Sunday, 1 January 2023"
     },
     {
         "name": "Caracas Venezuela Temple",
@@ -47,7 +47,7 @@
         "status": "PHASE 3: ALL LIVING ORDINANCES AND LIMITED PROXY ORDINANCES",
         "ordinances": "All ordinances are available by appointment only",
         "services": "No clothing rental available, No cafeteria available, No patron housing available, Distribution center nearby",
-        "closures": "Monday, 11 April 2022 - Monday, 25 April 2022, Monday, 10 October 2022 - Monday, 19 December 2022"
+        "closures": "Monday, 11 April 2022 - Monday, 25 April 2022 *Monday, 10 October 2022 - Monday, 19 December 2022"
     },
     {
         "name": "Santo Domingo Dominican Republic Temple",
@@ -57,7 +57,7 @@
         "status": "PHASE 3: ALL LIVING ORDINANCES AND LIMITED PROXY ORDINANCES",
         "ordinances": "All ordinances are available by appointment only",
         "services": "Clothing rental available, No cafeteria available, No patron housing available, Distribution center nearby",
-        "closures": "Saturday, 2 April 2022 - Sunday, 3 April 2022 (Limited Operations), Monday, 1 August 2022 - Monday, 10 October 2022, Saturday, 1 October 2022 - Sunday, 2 October 2022 (Limited Operations)"
+        "closures": "Saturday, 2 April 2022 - Sunday, 3 April 2022 (Limited Operations) *Monday, 1 August 2022 - Monday, 10 October 2022 *Saturday, 1 October 2022 - Sunday, 2 October 2022 (Limited Operations)"
     },
     {
         "name": "Logan Utah Temple",
@@ -67,7 +67,7 @@
         "status": "Temple closed",
         "ordinances": "All ordinances are available by appointment only",
         "services": "Clothing rental available, No cafeteria available, No patron housing available, No Distribution center nearby",
-        "closures": "Monday, 14 March 2022 - Monday, 28 March 2022, Saturday, 2 April 2022, Saturday, 1 October 2022, Monday, 3 October 2022 - Monday, 17 October 2022, Wednesday, 23 November 2022 (Limited Operations), Thursday, 24 November 2022, Saturday, 24 December 2022, Saturday, 31 December 2022 (Limited Operations)"
+        "closures": "Monday, 14 March 2022 - Monday, 28 March 2022 *Saturday, 2 April 2022 *Saturday, 1 October 2022 *Monday, 3 October 2022 - Monday, 17 October 2022 *Wednesday, 23 November 2022 (Limited Operations) *Thursday, 24 November 2022 *Saturday, 24 December 2022 *Saturday, 31 December 2022 (Limited Operations)"
     },
     {
         "name": "Meridian Idaho Temple",
@@ -77,6 +77,6 @@
         "status": "PHASE 3: ALL LIVING ORDINANCES AND LIMITED PROXY ORDINANCES",
         "ordinances": "All ordinances are available by appointment only",
         "services": "No clothing rental available, No cafeteria available, No patron housing available, No Distribution center nearby",
-        "closures": "Saturday, 2 April 2022, Monday, 30 May 2022 - Monday, 13 June 2022, Saturday, 1 October 2022, Monday, 31 October 2022 - Monday, 14 November 2022, Wednesday, 23 November 2022 - Thursday, 24 November 2022, Saturday, 24 December 2022, Saturday, 31 December 2022"
+        "closures": "Saturday, 2 April 2022 *Monday, 30 May 2022 - Monday, 13 June 2022 *Saturday, 1 October 2022 *Monday, 31 October 2022 - Monday, 14 November 2022 *Wednesday, 23 November 2022 - Thursday, 24 November 2022 *Saturday, 24 December 2022 *Saturday, 31 December 2022"
     }
 ]}

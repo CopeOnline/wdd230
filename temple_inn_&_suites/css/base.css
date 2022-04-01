@@ -316,6 +316,8 @@ div.specs a {
     border: 3px solid #3F7D20;
     width: 90%;
     margin: 2em auto;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 .temples img {
     border-bottom: 3px solid #3F7D20;
@@ -324,3 +326,44 @@ div.specs a {
 .temples label {
     margin: 5em;
 }
+.temples ul {
+    display: block;
+}
+.temples section img {
+    grid-row: 1/2;
+    margin: auto;
+}
+.temples section h2 {
+    grid-row: 2/3;
+}
+.temples section p.phone {
+    grid-row: 6/7;
+}
+.temples section p.address {
+    grid-row: 7/8;
+}
+.temples section h3.h3services {
+    grid-row: 8/9;
+}
+.temples section h3.h3close {
+    grid-row: 10/11;
+}
+.temples p {
+    margin: 0;
+    padding: 5px;
+}
+.temples h3 {
+    margin: 0;
+    padding: 10px;
+}
+.temples .like {
+    position: absolute;
+}
+.temples section #one span:nth-child(1), .temples section #two span:nth-child(1), .temples section #three span:nth-child(1), .temples section #four span:nth-child(1), .temples section #five span:nth-child(1), .temples section #six span:nth-child(1), .temples section #seven span:nth-child(1), .temples section #eight span:nth-child(1) { display: block;}
+.temples section #one span:nth-child(2), .temples section #two span:nth-child(2), .temples section #three span:nth-child(2), .temples section #four span:nth-child(2), .temples section #five span:nth-child(2), .temples section #six span:nth-child(2), .temples section #seven span:nth-child(2), .temples section #eight span:nth-child(2) { display: none;}
+
+.temples section .like span:nth-child(1) { display: block;}
+.temples section .like span:nth-child(2) { display: none;}
+
+.temples section .like.open span:nth-child(1) { display: none;}
+.temples section .like.open span:nth-child(2) { display: Block;}

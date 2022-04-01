@@ -189,7 +189,7 @@
         text-align: center;
     }
     .temples {
-        max-width: 1200px;
+        max-width: 850px;
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);

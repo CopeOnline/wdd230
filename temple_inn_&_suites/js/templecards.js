@@ -1,5 +1,6 @@
 
 let templeNum = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight']
+let num = 0
 const requestFilePath = 'json/temples.json';
 
 fetch(requestFilePath)
@@ -13,20 +14,18 @@ fetch(requestFilePath)
     temples.forEach(displayTemples);
   });
 
-
 function displayTemples(temple) { 
-    let card = document.createElement('section');
-    let h2 = document.createElement('h2');
-    let image = document.createElement('img');
-    let button = document.createElement('button');
-    let chckbox = document.createElement("INPUT");
-    let label = document.createElement('label')
-    label.setAttribute('for', 'likeTemple')
-    chckbox.setAttribute("type", "checkbox");
-    chckbox.setAttribute('id', 'likeTemple');
-    chckbox.setAttribute('class', `${temple.name}`);
-    label.textContent = 'Like';
-    
+    const card = document.querySelector(`section.${templeNum[num]}`);
+    const h2 = document.querySelector('h2');
+    const image = document.querySelector(`img.${templeNum[num]}`);
+    const status = document.querySelector("p.status");
+    const phone = document.querySelector("p.phone");
+    const address = document.querySelector("p.address");
+    const button = document.querySelector(`button.like`);
+    const detail = document.querySelector(`button.expand`);
+    const ordinances = document.querySelector("p.ordinances");
+    const service = document.querySelector("ul.localServices");
+    const closed = document.querySelector("ul.closures");
 
     h2.textContent = `${temple.name}`;
     image.setAttribute('src', temple.src);
@@ -34,17 +33,39 @@ function displayTemples(temple) {
     image.setAttribute('width', '400')
     image.setAttribute('height', '250')
     image.setAttribute('loading', 'lazy');
+    status.textContent = `${temple.status}`
+    phone.textContent = `${temple.telephone}`;
+    address.textContent = `${temple.address}`;
+    ordinances.textContent = `${temple.ordinances}`;
 
-    button.textContent = 'More...'
-    button.setAttribute('class', 'templeInfo')
+    localServices = temple.services.split(",")
+    for (let i=0; i < localServices.length; i++) {
+        const li = document.createElement("li")
+        li.textContent = `${localServices[i]}`;
+        service.appendChild(li)
+        card.appendChild(service)
+    }
+
+    templeClosed = temple.closures.split("*")
+    for (let i=0; i < templeClosed.length; i++) {
+        const li = document.createElement("li")
+        li.textContent = `${templeClosed[i]}`;
+        closed.appendChild(li)
+        card.appendChild(closed)
+    }
+
+    className = temple.name.split(" ")
+    button.classList.add(`${className[0]}`)
+    detail.setAttribute('id', `${templeNum[num]}`)
  
     card.appendChild(image);
+    card.appendChild(button);
     card.appendChild(h2);
-    card.appendChild(button)
-    card.appendChild(label)
-    card.appendChild(chckbox)
+    card.appendChild(phone);
+    card.appendChild(address);
+  
     
-
     document.querySelector('main.temples').appendChild(card);
+    num += 1
   }
 
