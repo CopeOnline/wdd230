@@ -372,8 +372,12 @@ div.specs a {
 .temples section .like.open span:nth-child(1) { display: none;}
 .temples section .like.open span:nth-child(2) { display: Block;}
 
-.temples section .show span:nth-child(1)
-.temples section .show span:nth-child(2)
-
-.temples section .show.expand span:nth-child(1) {display: block;}
-.temples section .show.expand span:nth-child(2) {display: none;}
+.temples ul {
+    list-style-type: none;
+}
+.temples ul {
+    padding: 0 0 0 20px;
+}
+.reservation h1 {
+    margin-top: 3em;
+}

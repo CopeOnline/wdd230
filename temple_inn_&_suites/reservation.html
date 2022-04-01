@@ -40,7 +40,37 @@
         </nav>
     </header>
     <main class="reservation">
-
+        <h1>Reserve your room</h1>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Destination</legend>
+                <label class="room">Location*<input type="text" name="location" required></label>
+                <label class="room">Arrival* <input type="date" name="in" required></label>
+                <label class="room">Departure* <input type="date" name="out" required ></label>
+                <label class="room">Number of rooms <input type="number" name="rooms" placeholder="If more than one" required></label>
+                <label class="room">Type of room(s)* <input type="text" name="type" placeholder="single, double" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Primary Contact</legend>
+                <label class="info">First Name* <input type="text" name="fname" required></label>
+                <label class="info">Last Name* <input type="text" name="lname" required></label>
+                <label class="info">Title <input type="text" name="title" pattern="([\p{L}\s-]){7,}" placeholder="Position" ></label>
+                <label class="info">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="info">Phone* <input type="tel" name="phone" placeholder="12355551234" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Business Information</legend>
+                <label class="info">Business Name* <input type="text" name="bName" required></label>
+                <label class="info">Business Description<textarea name="description" placeholder="Brief description of business"></textarea></label>   
+                <input type="hidden" name="datetime" id="todayDate">
+            </fieldset>
+            <fieldset>
+                <legend>Membership Level</legend>
+                <label class="level"><input type="radio" name="level" value="NP" required> Non-Profit Membership</label>
+                <label class="level"><input type="radio" name="level" value="bronze"> Bronze Membership</label>
+                <label class="level"><input type="radio" name="level" value="silver"> Silver Membership</label>
+                <label class="level"><input type="radio" name="level" value="gold"> Gold Membership</label>
+            </fieldset>
     </main>
     <footer>
         <div class="info" >
