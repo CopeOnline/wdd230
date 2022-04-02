@@ -188,5 +188,15 @@
     #danger p {
         text-align: center;
     }
-
+    .reservation {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .reservation ul {
+        list-style-type: disc;
+    }
+    .reservation input, .reservation select, .reservation textarea {
+        width: 350px;
+        height: 24px;
+    }
 }

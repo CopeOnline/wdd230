@@ -51,11 +51,11 @@
                     <option value="billings">Billings, Montana</option>
                     <option value="provo">Provo, Utah</option>
                     <option value="anchorage">Anchorage, Alaska</option>
-                    <option value="Kyiv">Kyiv, Ukraine</option>
-                    <option value="twin">Caracas, Venezuela</option>
-                    <option value="twin">Santo Domingo, Dominican Republic</option>
-                    <option value="twin">Logan, Utah</option>
-                    <option value="twin">Meridian, Idaho</option>
+                    <option value="kyiv">Kyiv, Ukraine</option>
+                    <option value="caracas">Caracas, Venezuela</option>
+                    <option value="Santo">Santo Domingo, Dominican Republic</option>
+                    <option value="logan">Logan, Utah</option>
+                    <option value="meridian">Meridian, Idaho</option>
                 </select>
                 <label class="room">Arrival* <input type="date" name="in" required></label>
                 <label class="room">Departure* <input type="date" name="out" required ></label>
@@ -110,7 +110,7 @@
             <fieldset>
                 <legend>Have a Question?</legend>
                 <label class="info">Name* <input type="text" name="name" required></label>
-                <label class="info">Phone* <input type="tel" name="phone" placeholder="12355551234" required></label>
+                <label class="info">Phone* <input type="tel" name="phone" placeholder="1235555123" pattern="[0-9]{10}" required></label>
                 <label class="info">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
                 <label class="info">Question*<textarea name="description" placeholder="How can we help?" required></textarea></label> 
                 <label class="submit"><input type="submit" value="Send Now" id="submitBtn"></label>  
