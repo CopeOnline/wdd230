@@ -418,5 +418,7 @@ div.specs a {
 .reservation section.form legend:nth-child(1) {
     padding-top: 10px;
 }
-
+.reservation h3 {
+    margin-left: 2em;
+}
 

@@ -45,8 +45,8 @@
         <form method="get" action="#">
             <fieldset>
                 <legend>Destination</legend>
-                <label class="room">Location*</label>
-                <select name="types" id="site" required>
+                <label for="sites">Location*</label>
+                <select name="types" id="sites" required>
                     <option value="" disabled selected>Select your option</option>
                     <option value="billings">Billings, Montana</option>
                     <option value="provo">Provo, Utah</option>
@@ -60,7 +60,7 @@
                 <label class="room">Arrival* <input type="date" name="in" required></label>
                 <label class="room">Departure* <input type="date" name="out" required ></label>
                 <label class="room">Number of Rooms <input type="number" name="rooms" placeholder="Total number of rooms" required></label>
-                <label for="types">Type of Room(s)*</label>
+                <label for="rooms">Type of Room(s)*</label>
                 <select name="types" id="rooms" required>
                     <option value="" disabled selected>Select your option</option>
                     <option value="single">Single Queen</option>
@@ -98,6 +98,7 @@
                 <li>Meridian, Idaho</li>
             </ul>
         </aside>
+        <h3>* Required Fields</h3>
     </main>
     <footer>
         <div class="info" >
