@@ -40,37 +40,64 @@
         </nav>
     </header>
     <main class="reservation">
-        <h1>Reserve your room</h1>
-        <form method="get" action="thankyou.html">
+        <section class="form">
+        <h1>Make a Reservation</h1>
+        <form method="get" action="#">
             <fieldset>
                 <legend>Destination</legend>
-                <label class="room">Location*<input type="text" name="location" required></label>
+                <label class="room">Location*</label>
+                <select name="types" id="site" required>
+                    <option value="" disabled selected>Select your option</option>
+                    <option value="billings">Billings, Montana</option>
+                    <option value="provo">Provo, Utah</option>
+                    <option value="anchorage">Anchorage, Alaska</option>
+                    <option value="Kyiv">Kyiv, Ukraine</option>
+                    <option value="twin">Caracas, Venezuela</option>
+                    <option value="twin">Santo Domingo, Dominican Republic</option>
+                    <option value="twin">Logan, Utah</option>
+                    <option value="twin">Meridian, Idaho</option>
+                </select>
                 <label class="room">Arrival* <input type="date" name="in" required></label>
                 <label class="room">Departure* <input type="date" name="out" required ></label>
-                <label class="room">Number of rooms <input type="number" name="rooms" placeholder="If more than one" required></label>
-                <label class="room">Type of room(s)* <input type="text" name="type" placeholder="single, double" required></label>
+                <label class="room">Number of Rooms <input type="number" name="rooms" placeholder="Total number of rooms" required></label>
+                <label for="types">Type of Room(s)*</label>
+                <select name="types" id="rooms" required>
+                    <option value="" disabled selected>Select your option</option>
+                    <option value="single">Single Queen</option>
+                    <option value="double">Double Queen</option>
+                    <option value="king">King</option>
+                    <option value="twin">Double Twin</option>
+                </select>
             </fieldset>
             <fieldset>
-                <legend>Primary Contact</legend>
-                <label class="info">First Name* <input type="text" name="fname" required></label>
-                <label class="info">Last Name* <input type="text" name="lname" required></label>
-                <label class="info">Title <input type="text" name="title" pattern="([\p{L}\s-]){7,}" placeholder="Position" ></label>
+                <legend>Contact Information</legend>
+                <label class="info">First Name* <input type="text" name="fname" placeholder="John" required></label>
+                <label class="info">Last Name* <input type="text" name="lname" placeholder="Doe" required></label>
                 <label class="info">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                <label class="info">Phone* <input type="tel" name="phone" placeholder="12355551234" required></label>
+                <label class="info">Phone* <input type="tel" name="phone" placeholder="12355551" pattern="[0-9]{10}" required></label>
+                <label class="info">Street address* <input type="text" name="address" placeholder="1600 Pennsylvania Avenue NW" required></label>
+                <label class="info">City* <input type="text" name="city" placeholder="Washington" required></label>
+                <label class="info">State* <input type="text" name="state" placeholder="DC" pattern="[a-zA-Z]{2}" required></label>
+                <label class="info">Country* <input type="text" name="country" placeholder="Unites States" required></label>
+                <label class="info">Zip Code* <input type="text" name="zip" placeholder="20500" pattern="[0-9]{5}" required ></label>
+                <label class="info">Comments <textarea name="comments" placeholder="Accommodations/Comments"></textarea></label> 
             </fieldset>
-            <fieldset>
-                <legend>Business Information</legend>
-                <label class="info">Business Name* <input type="text" name="bName" required></label>
-                <label class="info">Business Description<textarea name="description" placeholder="Brief description of business"></textarea></label>   
-                <input type="hidden" name="datetime" id="todayDate">
-            </fieldset>
-            <fieldset>
-                <legend>Membership Level</legend>
-                <label class="level"><input type="radio" name="level" value="NP" required> Non-Profit Membership</label>
-                <label class="level"><input type="radio" name="level" value="bronze"> Bronze Membership</label>
-                <label class="level"><input type="radio" name="level" value="silver"> Silver Membership</label>
-                <label class="level"><input type="radio" name="level" value="gold"> Gold Membership</label>
-            </fieldset>
+            <label class="submit"><input type="submit" value="Book my Reservation" class="submitStay"></label>
+        </form>
+    </section>
+        <aside>
+            <h2>Our current locations:</h2>
+            <ul>
+                <li>Billings, Montana</li>
+                <li>Provo, Utah</li>
+                <li>Anchorage, Alaska </li>
+                <li>Kyiv, Ukraine</li>
+                <li>Caracas, Venezuela</li>
+                <li>Santo Domingo, Dominican Republic </li>
+                <li>Logan, Utah</li>
+                <li>Meridian, Idaho</li>
+            </ul>
+        </aside>
     </main>
     <footer>
         <div class="info" >
