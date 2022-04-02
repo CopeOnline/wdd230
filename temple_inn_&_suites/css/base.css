@@ -378,7 +378,7 @@ div.specs a {
 .temples ul {
     padding: 0 0 0 20px;
 }
-.reservation h1 {
+.reservation h1, .services h1 {
     margin: 3em 0 0 15px;
     background-color: #3F7D20;
     height: 60px;
@@ -386,6 +386,7 @@ div.specs a {
     padding: 20px 10px 0 10px ;
     border-radius: 1em;
     color: #f2f4f8;
+    box-shadow: 5px 5px 5px grey;
 }
 .reservation aside {
     display: none;
@@ -427,4 +428,40 @@ div.specs a {
 .reservation h3 {
     margin-left: 2em;
 }
-
+main.services {
+    margin-bottom: 1em;
+}
+.services h1 {
+    margin: 3em auto 1.5em auto;
+    background-color: #3F7D20;
+    height: 60px;
+    width: fit-content;
+    padding: 20px 10px 0 10px ;
+    border-radius: 1em;
+    color: #f2f4f8;
+}
+.services p, .services h2 { 
+    padding: 10px 20px;
+    margin-bottom: 0;
+}
+.services p {
+    margin-top: 0;
+}
+.services a {
+    display: block;
+    margin: 10px 0 20px 20px;
+    background-color: #3F7D20;
+    color: #f2f4f8;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px grey;
+}
+.services > div h2 {
+    font-size: 2em;
+    text-shadow: 2px 2px 20px #54205e;
+}
+.services ul {
+    display: block;
+    margin-right: 10px;
+}

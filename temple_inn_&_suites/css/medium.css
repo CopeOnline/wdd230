@@ -218,7 +218,7 @@
     .reservation aside, .reservation aside ul {
         display: block;
     }
-    .reservation {
+    .reservation, .services {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -238,7 +238,23 @@
         padding-right: 10px;
         font-size: 1.5em;
     }
-
+    .services div.amenity {
+        border: 2px solid grey;
+        border-radius: 2em;
+        box-shadow: 2px 2px 2px grey;
+        width: fit-content;
+    }
+    .services h1, .services div.offer {
+        grid-column: 1/3;
+        margin: 1em auto;
+    }
+    .services p, .services h2, .services a {
+        grid-column: 1/2;
+    }
+    .services div.amenity {
+        grid-column: 2/3;
+        grid-row: 2/6;
+    }
 
 
 }   
