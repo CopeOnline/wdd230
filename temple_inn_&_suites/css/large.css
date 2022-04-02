@@ -188,16 +188,33 @@
     #danger p {
         text-align: center;
     }
-    .reservation, .services {
+    .reservation, .services, .reception, .mission {
         max-width: 900px;
         margin: 0 auto;
     }
-    .reservation ul, .services ul {
+    .reservation ul, .services ul, .mission ul {
         list-style-type: disc;
     }
     .reservation input, .reservation select, .reservation textarea {
         width: 350px;
         height: 24px;
+    }
+    .mission h2 {
+        margin: 2em 0 0 2.5em ;
+    }
+    .mission ul {
+        margin: 6em 0 0 4em;
+    }
+    .mission input {
+        height: 1em;
+    }
+    .mission label {
+        font-size: 1em;
+        margin: 0;
+        padding-top: 1em
+    }
+    .mission input.submitBtn {
+        height: 2em;
     }
 
 }

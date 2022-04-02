@@ -326,7 +326,7 @@ div.specs a {
 .temples label {
     margin: 5em;
 }
-.temples ul {
+.temples ul, .mission ul {
     display: block;
 }
 .temples section img {
@@ -440,7 +440,7 @@ main.services {
     border-radius: 1em;
     color: #f2f4f8;
 }
-.services p, .services h2, .reception p, .reception h2 { 
+.services p, .services h2, .reception p, .reception h2, .mission p, .mission h2 { 
     padding: 10px 20px;
     margin-bottom: 0;
 }
@@ -461,17 +461,45 @@ main.services {
     font-size: 2em;
     text-shadow: 2px 2px 20px #54205e;
 }
-.services ul {
+.services ul, .reception ul {
     display: block;
     margin-right: 10px;
 }
-.reception img {
+.reception img, .mission img {
     width: 400px;
     justify-self: center;
+    margin: 10px 0;
 }
 .reception h3 {
     margin: 0 auto;
     padding: 10px;
     text-align: center;
 }
+.reception ul {
+    margin: 0;
+}
+.mission h1 {
+    margin: 3em 10px 1.5em 10px;
+    background-color: #3F7D20;
+    height: 100px;
+    width: fit-content;
+    padding: 20px 10px 0 10px ;
+    border-radius: 1em;
+    color: #f2f4f8;
+}
+.mission label{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 32px;
+}
+.mission input {
+    height: 44px;
+}
+.mission .submitBtn {
+    border: 5px groove grey;
+    background-color: #3F7D20;
+    color: #f2f4f8;
+}
+
  

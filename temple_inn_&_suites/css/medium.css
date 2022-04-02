@@ -218,7 +218,7 @@
     .reservation aside, .reservation aside ul {
         display: block;
     }
-    .reservation, .services {
+    .reservation, .services, .reception, .mission {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -244,7 +244,7 @@
         box-shadow: 2px 2px 2px grey;
         width: fit-content;
     }
-    .services h1, .services div.offer {
+    .services h1, .services div.offer, .reception h1, .mission h1 {
         grid-column: 1/3;
         margin: 1em auto;
     }
@@ -255,6 +255,78 @@
         grid-column: 2/3;
         grid-row: 2/6;
     }
+    .reception p {
+        align-self: center;
+    }
+    .reception p:nth-child(3) {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        text-align: center;
+    }
+    .reception h2.detail {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        margin: 0;
+    }
+    .reception ul {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        margin-top: 3.5em;
+    }
+    .reception li::marker {
+        color: #3F7D20;
+        content: "➡";
+        font-size: 1.5em;
+    }
+    .reception li {
+        padding-left: 10px;
+    }
+    .reception h2:nth-of-type(2) {
+        grid-column: 1/3;
+    }
+    .reception p:nth-of-type(5) {
+        grid-column: 2/3;
+        grid-row: 7/8;
+    }
+    .reception h3 {
+        grid-column: 2/3;
+        grid-row: 7/8;
+        margin-top: 8em;
+    }
+    .reception img, .mission img {
+        box-shadow: 5px 5px 5px #3F7D20;
+        border-radius: 1em;
+        margin-bottom: 1em;
+    }
+    .reception img:nth-of-type(2) {
+        grid-column: 2/3;  
+    }
+    .reception p:nth-of-type(4) {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    .mission p:nth-of-type(1) {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .mission form {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .mission h2, .mission ul {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    .mission ul {
+        margin: 4.5em 0;
+    }
+    .mission h1 {
+        height: 60px;
+    }
+    .mission img {
+        width: 350px;
+    }
+
 
 
 }   
