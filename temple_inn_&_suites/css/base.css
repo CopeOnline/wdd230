@@ -318,10 +318,10 @@ div.specs a {
     margin: 2em auto;
     display: grid;
     grid-template-columns: 1fr;
+    height: fit-content;
 }
 .temples img {
     border-bottom: 3px solid #3F7D20;
-
 }
 .temples label {
     margin: 5em;
@@ -358,7 +358,7 @@ div.specs a {
     margin: 0;
     padding: 10px;
 }
-.temples .like {
+.temples .likeBtn {
     position: absolute;
     background-color: transparent;
     border: none;
@@ -366,17 +366,23 @@ div.specs a {
     font-size: 2em;
 }
 
-.temples section .like span:nth-child(1) { display: block;}
-.temples section .like span:nth-child(2) { display: none;}
+.temples section .likeBtn span:nth-child(1) { display: block;}
+.temples section .likeBtn span:nth-child(2) { display: none;}
 
-.temples section .like.open span:nth-child(1) { display: none;}
-.temples section .like.open span:nth-child(2) { display: Block;}
+.temples section .likeBtn.liked span:nth-child(1) { display: none;}
+.temples section .likeBtn.liked span:nth-child(2) { display: Block;}
+
+.temples section .show {display: block;}
+.temples section .hide { display: none;}
 
 .temples ul {
     list-style-type: none;
 }
 .temples ul {
     padding: 0 0 0 20px;
+}
+.temples button.showBtn {
+    margin: 1em;
 }
 .reservation h1, .services h1, .reception h1 {
     margin: 3em 0 0 15px;
@@ -501,5 +507,6 @@ main.services {
     background-color: #3F7D20;
     color: #f2f4f8;
 }
+
 
  

@@ -21,7 +21,7 @@ function displayTemples(temple) {
     const status = document.querySelector("p.status");
     const phone = document.querySelector("p.phone");
     const address = document.querySelector("p.address");
-    const button = document.querySelector(`button.like`);
+    const button = document.querySelector(`button.likeBtn`);
     const detail = document.querySelector(`button.show`);
     const ordinances = document.querySelector("p.ordinances");
     const service = document.querySelector("ul.localServices");
