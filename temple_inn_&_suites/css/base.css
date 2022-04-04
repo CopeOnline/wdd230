@@ -383,6 +383,10 @@ div.specs a {
 }
 .temples button.showBtn {
     margin: 1em;
+    border: 5px groove grey;
+    font-size: 1.5em;
+    background-color: #3F7D20;
+    color: #f2f4f8;
 }
 .reservation h1, .services h1, .reception h1 {
     margin: 3em 0 0 15px;

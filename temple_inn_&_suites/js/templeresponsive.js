@@ -1,91 +1,45 @@
 
 function toggleLikeOne(){
-    let checkLike = localStorage.getItem('one');
-    if (checkLike === null || checkLike == ''){
-        localStorage.setItem('one', 'like')
-    }else if (checkLike == 'like'){
-        localStorage.setItem('one', '')
-    }else {
-        localStorage.setItem('one', 'like')
-    }
+    checkForLike('one')
     document.getElementById('likeOne').classList.toggle("liked");
 }
 function toggleLikeTwo(){
-    let checkLike = localStorage.getItem('two');
-    if (checkLike === null || checkLike == ''){
-        localStorage.setItem('two', 'like')
-    }else if (checkLike == 'like'){
-        localStorage.setItem('two', '')
-    }else {
-        localStorage.setItem('two', 'like')
-    }
+    checkForLike('two')
     document.getElementById('likeTwo').classList.toggle("liked");
 }
 function toggleLikeThree(){
-    let checkLike = localStorage.getItem('three');
-    if (checkLike === null || checkLike == ''){
-        localStorage.setItem('three', 'like')
-    }else if (checkLike == 'like'){
-        localStorage.setItem('three', '')
-    }else {
-        localStorage.setItem('three', 'like')
-    }
+    checkForLike('three')
     document.getElementById('likeThree').classList.toggle("liked");
 }
 function toggleLikeFour(){
-    let checkLike = localStorage.getItem('four');
-    if (checkLike === null || checkLike == ''){
-        localStorage.setItem('four', 'like')
-    }else if (checkLike == 'like'){
-        localStorage.setItem('four', '')
-    }else {
-        localStorage.setItem('four', 'like')
-    }
+    checkForLike('four')
     document.getElementById('likeFour').classList.toggle("liked");
 }
 function toggleLikeFive(){
-    let checkLike = localStorage.getItem('five');
-    if (checkLike === null || checkLike == ''){
-        localStorage.setItem('five', 'like')
-    }else if (checkLike == 'like'){
-        localStorage.setItem('five', '')
-    }else {
-        localStorage.setItem('five', 'like')
-    }
+    checkForLike('five')
     document.getElementById('likeFive').classList.toggle("liked");
 }
 function toggleLikeSix(){
-    let checkLike = localStorage.getItem('six');
-    if (checkLike === null || checkLike == ''){
-        localStorage.setItem('six', 'like')
-    }else if (checkLike == 'like'){
-        localStorage.setItem('six', '')
-    }else {
-        localStorage.setItem('six', 'like')
-    }
+    checkForLike('six')
     document.getElementById('likeSix').classList.toggle("liked");
 }
 function toggleLikeSeven(){
-    let checkLike = localStorage.getItem('seven');
-    if (checkLike === null || checkLike == ''){
-        localStorage.setItem('seven', 'like')
-    }else if (checkLike == 'like'){
-        localStorage.setItem('seven', '')
-    }else {
-        localStorage.setItem('seven', 'like')
-    }
+    checkForLike('seven')
     document.getElementById('likeSeven').classList.toggle("liked");
 }
 function toggleLikeEight(){
-    let checkLike = localStorage.getItem('eight');
-    if (checkLike === null || checkLike == ''){
-        localStorage.setItem('eight', 'like')
-    }else if (checkLike == 'like'){
-        localStorage.setItem('eight', '')
-    }else {
-        localStorage.setItem('eight', 'like')
-    }
+    checkForLike('eight')
     document.getElementById('likeEight').classList.toggle("liked");
+}
+function checkForLike(position) {
+    let checkLike = localStorage.getItem(position);
+    if (checkLike === null || checkLike == ''){
+        localStorage.setItem(position, 'like')
+    }else if (checkLike == 'like'){
+        localStorage.setItem(position, '')
+    }else {
+        localStorage.setItem(position, 'like')
+    }
 }
 
 const one = document.getElementById("likeOne");
@@ -131,6 +85,7 @@ if (localStorage.getItem('one') == 'like') {
     document.getElementById('likeEight').classList.toggle("liked");
 }
 
+
 function toggleShow(list) {
     if (list.classList.contains('show')) {
         list.classList.remove('show');
@@ -150,9 +105,7 @@ function toggleShow(list) {
     }
 }
 
-
-
-function toggleDetailOne(){
+function toggleDetailOne() {
     document.getElementById('statsOne').classList.toggle("show");
     const list = document.querySelectorAll('.tplOne');
     list.forEach(toggleShow)

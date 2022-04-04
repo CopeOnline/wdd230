@@ -199,6 +199,10 @@
         width: 350px;
         height: 24px;
     }
+    .temples {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1200px;   
+    }
     .mission h2 {
         margin: 2em 0 0 2.5em ;
     }
@@ -216,5 +220,5 @@
     .mission input.submitBtn {
         height: 2em;
     }
-
+    
 }
