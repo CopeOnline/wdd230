@@ -20,8 +20,3 @@ x.onclick = toggleMenu;
 
 const y = document.getElementById("phoneBtn");
 y.onclick = toggleContact;
-
-let saveForm = () => {
-    const arrival = document.getElementById('start');
-    console.log(arrival)
-}
