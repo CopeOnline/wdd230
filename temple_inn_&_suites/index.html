@@ -50,12 +50,12 @@
             <img class="heroImg" src="images/1200_hero.jpg" alt="group meeting"/>   
             </picture>
         </div>
-        <form method="get" action="#" class="booking-container">
+        <form method="get" action="reservation.html" class="booking-container">
             <fieldset class="booking" >
                 <legend></legend>
-                <label class="dates">Check in:<input type="date" name="start" required></label>
-                <label class="dates">Check out:<input type="date" name="end" required></label>
-                <label class="checkout"><input type="submit" value="Check Availability" id="checkout"></label>  
+                <label class="dates">Check in:<input type="date" name="start" id="start" required></label>
+                <label class="dates">Check out:<input type="date" name="end" id="end" required></label>
+                <label class="checkout"><input type="submit" value="Check Availability" id="checkout" onclick="saveForm()"></label>  
             </fieldset>
         </form>
         <div class="callToAction">
