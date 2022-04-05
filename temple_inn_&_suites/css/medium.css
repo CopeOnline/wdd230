@@ -126,7 +126,7 @@
         grid-column: 2/5;
     }
     .currentWthr {
-        height: 125px;
+        height: fit-content;
     }
     div.wthrContainer img {
         width: 44px;
