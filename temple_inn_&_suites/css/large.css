@@ -85,7 +85,7 @@
     }
     #checkout {
         margin: 0 1em 0 1em;
-        padding: 0;
+        padding: 3px 0 0 0;
     }
     .content {
         max-width: 1200px;
