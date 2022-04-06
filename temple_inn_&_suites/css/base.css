@@ -516,5 +516,7 @@ main.services {
 input:focus, textarea:focus, select:focus{
     outline: none;
 }
-
+.mission h3 {
+    margin-left: 1em;
+}
  

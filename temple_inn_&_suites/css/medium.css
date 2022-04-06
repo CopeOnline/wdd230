@@ -323,8 +323,17 @@
         grid-column: 2/3;
         grid-row: 4/5;
     }
+    .mission h2 {
+        margin: 3em 0 0 3em;
+        border: 2px solid grey;
+        height: 215px;
+        width: 225px;
+        border-radius: 1em;
+        background-color: rgb(84, 32, 94, 0.2);
+
+    }
     .mission ul {
-        margin: 4.5em 0;
+        margin: 8em 0 0 4.5em;
     }
     .mission h1 {
         height: 60px;
@@ -332,7 +341,6 @@
     .mission img {
         width: 350px;
     }
-
 
 
 }   
